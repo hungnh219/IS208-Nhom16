@@ -1,7 +1,7 @@
 const { default: mongoose } = require("mongoose");
 const bcrypt = require('bcrypt')
 
-var userSchema = new mongoose.Schema({
+var teacherSchema = new mongoose.Schema({
     firstname:{
         type:String,
         required:true,
@@ -23,14 +23,9 @@ var userSchema = new mongoose.Schema({
         type:String,
         default: 'user',
     },
-    cart: {
-        type: Array,
-        default: [],
-    },
-    address: [{type: mongoose.Types.ObjectId,  ref: 'Address'}]
 });
 
-userSchema.pre('save', async function() {
+teacherSchema.pre('save', async function() {
     // chi hash cac password moi
     if (this.isModified()) {
         const salt = bcrypt.genSaltSync(10);
@@ -38,11 +33,11 @@ userSchema.pre('save', async function() {
     }
 })
 
-userSchema.methods = {
+teacherSchema.methods = {
     isCorrectPassword: async function (password) {
         return await bcrypt.compare(password, this.password);
     }
 }
 
 //Export the model
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('Teacher', teacherSchema);

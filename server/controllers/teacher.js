@@ -1,4 +1,4 @@
-const User = require('../models/user')
+const Teacher = require('../models/teacher')
 
 const register = async (req, res) => {
     const { email, password, firstname, lastname } = req.body
@@ -9,26 +9,26 @@ const register = async (req, res) => {
         })
     }
         
-    const user = await User.findOne({ email });
-    if (user) {
-        // throw new Error('User has existed!');
-        console.log('User has existed!')
+    const teacher = await Teacher.findOne({ email });
+    if (teacher) {
+        // throw new Error('teacher has existed!');
+        console.log('teacher has existed!')
         return res.status(400).json({
             success: false,
-            message: 'User has existed!',
+            message: 'teacher has existed!',
         });
     }
 
-    const newUser = await User.create(req.body);
+    const newTeacher = await Teacher.create(req.body);
     return res.status(200).json({
-        success: newUser ? true : false,
-        message: newUser ? 'Register successfully!' : 'Something went wrong!'
+        success: newTeacher ? true : false,
+        message: newTeacher ? 'Register successfully!' : 'Something went wrong!'
     })
 }
 
 const getAll = async (req, res) => {
     try {
-        const users = await User.find();
+        const teachers = await Teacher.find();
         res.status(200).json({
             success: true,
             message: users,
@@ -41,25 +41,25 @@ const getAll = async (req, res) => {
     }
 }
 
-const deleteUserByEmail = async (req, res) => {
-    const { userEmail } = req.body;
+const deleteTeacherByEmail = async (req, res) => {
+    const { teacherEmail } = req.body;
 
     try {
-        const user = await User.findOne({email: userEmail});
+        const teacher = await Teacher.findOne({email: teacherEmail});
 
-        if (!user) {
+        if (!teacher) {
             res.status(404).json({
                 success: false,
                 message: "invalid email",
             })
         }
 
-        const userName = user.firstname;
-        const deletedUser = await User.deleteOne(user);
+        const TeacherName = Teacher.firstname;
+        const deletedTeacher = await Teacher.deleteOne(teacher);
 
         res.status(200).json({
-            success: deletedUser ? true : false,
-            message: `${userName} has been deleted`,
+            success: deletedTeacher ? true : false,
+            message: `${teacherName} has been deleted`,
         })
     } catch {
         res.status(400).json({
@@ -78,17 +78,17 @@ const login = async (req, res) => {
         })
     }
 
-    const response = await User.findOne({email: email})
+    const response = await Teacher.findOne({email: email})
     
     if (response && response.isCorrectPassword(email)) {
         // khong tra password va role ve client
-        const { password, role, ...userData } = response.toObject();
+        const { password, role, ...teacherData } = response.toObject();
 
         console.log(`${response.firstname} login successfully`);
         return res.status(200).json({
             success: true,
-            message: `${userData.firstname} login successfully`,
-            userData
+            message: `${teacherData.firstname} login successfully`,
+            teacherData
         })
     } else {
         console.log('Login failed');
@@ -102,6 +102,6 @@ const login = async (req, res) => {
 module.exports = {
     register,
     getAll,
-    deleteUserByEmail,
+    deleteTeacherByEmail,
     login,
 }
