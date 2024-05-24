@@ -2,11 +2,7 @@ const { default: mongoose } = require("mongoose");
 const bcrypt = require('bcrypt')
 
 var teacherSchema = new mongoose.Schema({
-    firstname:{
-        type:String,
-        required:true,
-    },
-    lastname:{
+    name:{
         type:String,
         required:true,
     },
@@ -19,10 +15,23 @@ var teacherSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
+    gender: {
+        type: String,
+        enum: ['Male', 'Female', 'Other'],
+        required: true
+    },
     role:{
         type:String,
         default: 'user',
     },
+    subjects: [{
+        type: String,
+        required: true
+    }],
+    classes: [{
+        type: String,
+        required: true
+    }]
 });
 
 teacherSchema.pre('save', async function() {
