@@ -18,7 +18,7 @@ const Schedule=()=>{
     const handleChangeYear = (e) => {
         setYear(e.target.value);
       };
-    return <div className="flex bg-[#e6e6ee] w-[100%] h-[100vh]">
+    return <div className="flex bg-[#e6e6ee] w-[100%] min-h-[100vh]">
         <Sidebar/>
         <div className="basis-[100%] bg-[white] ml-[300px] mt-[24px] mr-[24px] p-[16px] rounded-[8px] shadow-xl">
         <div className="flex justify-center">

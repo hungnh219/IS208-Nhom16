@@ -11,7 +11,7 @@ const Notebook=()=>{
         [2, 4, "Lí", "43/45", "Nguyễn Văn B"],
         // ...
       ];
-    const [day,setDay]=useState(2)
+    const [classes,setClasses]=useState(2)
     const [week,setWeek]=useState(1)
     const [semester, setSemester] =useState(1);
     const [year,setYear]=useState("2023-2024")
@@ -21,24 +21,30 @@ const Notebook=()=>{
     const handleChangeYear = (e) => {
         setYear(e.target.value);
       };
-      const handleChangeDay = (e) => {
-        setDay(e.target.value);
+      const handleChangeClass = (e) => {
+        setClasses(e.target.value);
       };
       const handleChangeWeek = (e) => {
         setWeek(e.target.value);
       };
-    return <div className="flex bg-[#e6e6ee] w-[100%] h-[100vh]">
+    return <div className="flex bg-[#e6e6ee] w-[100%] min-h-[100vh]">
         <Sidebar/>
         <div className="basis-[100%] bg-[white] ml-[300px] mt-[24px] mr-[24px] p-[16px] rounded-[8px] shadow-xl">
         <div className="flex justify-center">
-        <label className="font-bold mr-[8px] ml-[16px]">Thứ</label>
-      <select value={day} onChange={handleChangeDay} className="border-[1px] border-[black]"> 
-          <option value={2}> 2</option>
-          <option value={3}> 3</option>
-          <option value={4}> 4</option>
-          <option value={5}> 5</option>
-          <option value={6}> 6</option>
-          <option value={7}> 7</option>
+        <label className="font-bold mr-[8px] ml-[16px]">Lớp</label>
+      <select value={classes} onChange={handleChangeClass} className="border-[1px] border-[black]"> 
+          <option value={"10A1"}>10A1</option>
+          <option value={"10A2"}>10A2</option>
+          <option value={"10A3"}>10A3</option>
+          <option value={"10A4"}>10A4</option>
+          <option value={"11A1"}>11A1</option>
+          <option value={"11A2"}>11A2</option>
+          <option value={"11A3"}>11A3</option>
+          <option value={"11A4"}>11A4</option>
+          <option value={"12A1"}>12A1</option>
+          <option value={"12A2"}>12A2</option>
+          <option value={"12A3"}>12A3</option>
+          <option value={"12A4"}>12A4</option>
       </select>
       <label className="font-bold mr-[8px] ml-[16px]">Tuần</label>
       <select value={week} onChange={handleChangeWeek} className="border-[1px] border-[black]"> 
