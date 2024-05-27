@@ -1,8 +1,8 @@
 const Teacher = require('../models/teacher')
 
 const register = async (req, res) => {
-    const { email, password, firstname, lastname } = req.body
-    if (!email || !password || !firstname || !lastname) {
+    const { email, password, firstName, lastName, gender, phoneNumber } = req.body
+    if (!email || !password || !firstName || !lastName || !gender || !phoneNumber ) {
         return res.status(400).json({
             success: false,
             message: 'Missing inputs'
@@ -84,10 +84,10 @@ const login = async (req, res) => {
         // khong tra password va role ve client
         const { password, role, ...teacherData } = response.toObject();
 
-        console.log(`${response.firstname} login successfully`);
+        console.log(`${response.firstName} login successfully`);
         return res.status(200).json({
             success: true,
-            message: `${teacherData.firstname} login successfully`,
+            message: `${teacherData.firstName} login successfully`,
             teacherData
         })
     } else {

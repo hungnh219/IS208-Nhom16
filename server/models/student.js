@@ -1,10 +1,18 @@
-const { default: mongoose } = require("mongoose");
 const mongoose = require('mongoose');
 
 const studentSchema = new mongoose.Schema({
-    name: {
+    firstName: {
         type: String,
         required: true
+    },
+    lastName: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true
     },
     dateOfBirth: {
         type: Date,
@@ -12,11 +20,13 @@ const studentSchema = new mongoose.Schema({
     },
     gender: {
         type: String,
+        enum: ['Male', 'Female', 'Other'],
         required: true
     },
     class: {
-        type: String,
+        type: mongoose.Types.ObjectId, ref: 'Class',
         required: true
     }
 });
+
 module.exports = mongoose.model('Student', studentSchema);

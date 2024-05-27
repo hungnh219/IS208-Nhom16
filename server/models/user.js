@@ -1,4 +1,4 @@
-const { default: mongoose } = require("mongoose");
+const mongoose = require('mongoose');
 const bcrypt = require('bcrypt')
 
 var userSchema = new mongoose.Schema({
