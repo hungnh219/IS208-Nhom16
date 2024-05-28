@@ -41,13 +41,13 @@ const Login = () => {
                         />
                     </div>
                     {error && <div className="text-red-500 text-sm">{error}</div>}
-                    <button type="submit" className="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    <button type="submit" className="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md shadow hover:bg-indigo-700 ">
                         Đăng nhập
                     </button>
-                    <button type="submit" className="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    <div type="submit" className="w-full py-2 px-4 text-indigo-600 bg-white font-semibold text-center cursor-pointer"
                     onClick={()=>{navigate("/forgot_password")}}>
-                        Quên mật khẩu
-                    </button>
+                        Quên mật khẩu?
+                    </div>
                 </form>
             </div>
         </div>

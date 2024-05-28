@@ -5,16 +5,69 @@ import Modal from 'react-modal';
 
 Modal.setAppElement('#root');
 const Notebook=()=>{
-    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalShowIsOpen, setModalShowIsOpen] = useState(false);
+    const [modalUpdateIsOpen, setModalUpdateIsOpen] = useState(false);
+    const [modalAttendIsOpen, setModalAttendIsOpen] = useState(false);
+    const groupBy = (array, keyGetter) => {
+      return array.reduce((result, item) => {
+        // Lấy giá trị của key dựa trên hàm keyGetter
+        const key = keyGetter(item);
+        // Nếu chưa có nhóm nào cho key này, tạo nhóm mới
+        if (!result[key]) {
+          result[key] = [];
+        }
+        // Thêm item vào nhóm tương ứng
+        result[key].push(item);
+        return result;
+      }, {});
+    };
     const scheduleData = [
-        [2, 3, "Toán", "42/45", "Nguyễn Văn A"],
-        [2, 4, "Lí", "43/45", "Nguyễn Văn B"],
-        // ...
+      {
+        day: 2,
+        lesson: 2,
+        subject: "Toán",
+        classNumber: "42/45",
+        teacher: "Nguyễn Văn A",
+        evaluate:"Tốt"
+      },
+      {
+        day: 2,
+        lesson: 3,
+        subject: "Toán",
+        classNumber: "42/45",
+        teacher: "Nguyễn Văn A",
+        evaluate:"Khá"
+      },
+      {
+        day: 3,
+        lesson: 2,
+        subject: "Lí",
+        classNumber: "42/45",
+        teacher: "Nguyễn Văn B",
+        evaluate:"Tốt"
+      },
+   
+       
       ];
+    const listStudents=[
+      {name:"Nguyễn Văn A",attend:true},
+      {name:"Nguyễn Văn Af",attend:false},
+      {name:"Nguyễn Văn Ad",attend:true},
+      {name:"Nguyễn Văn A",attend:true},
+      {name:"Nguyễn Văn Ad",attend:false},
+      {name:"Nguyễn Văn As",attend:true},
+      {name:"Nguyễn Văn Ae",attend:true},
+      {name:"Nguyễn Văn Ay",attend:false},
+    ]  
+    const groupDays = groupBy(scheduleData, item => item.day);
     const [classes,setClasses]=useState(2)
     const [week,setWeek]=useState(1)
     const [semester, setSemester] =useState(1);
     const [year,setYear]=useState("2023-2024")
+    const [attend,setAttend]=useState(listStudents)
+    const attendStudentCount=attend.filter((student) =>{
+      return student.attend;
+    }).length;
     const handleChangeSemester = (e) => {
       setSemester(e.target.value);
     };
@@ -79,33 +132,38 @@ const Notebook=()=>{
               <th>Môn học</th>
               <th>Sỉ số</th>
               <th>Giáo viên</th>
+              <th>Đánh giá</th>
               <th>Hành động</th>
             </tr>
           </thead>
           <tbody>
-            {scheduleData.map((row, index) => (
-                <tr key={index}>
-                <td >{row[0]}</td>
-                <td >{row[1]}</td>
-                <td >{row[2]}</td>
-                <td >{row[3]}</td>
-                <td >{row[4]}</td>
+            {Object.keys(groupDays).map((key, index) => {
+          return groupDays[key].map((item,id)=>{        
+            return  <tr key={index}>
+                  {id===0?<td rowspan={groupDays[key].length}>{item.day}</td>:""}
+                <td >{item.lesson}</td>
+                <td >{item.subject}</td>
+                <td >{item.classNumber}</td>
+                <td >{item.teacher}</td>
+                <td >{item.evaluate}</td>
                 <td >
                     <button className="px-[16px] py-[4px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
-                    onClick={() => setModalIsOpen(true)}>Xem</button>
+                    onClick={() => setModalShowIsOpen(true)}>Xem</button>
                     <button className="px-[16px] py-[4px] hover:opacity-[0.8] bg-[red] text-[white] shadow-xl "
-                    onClick={() => setModalIsOpen(true)}>Sửa</button>
+                    onClick={() => setModalUpdateIsOpen(true)}>Sửa</button>
                 </td>
               
               </tr>
-            ))}
+          })
+ 
+            })}
           </tbody>
         </table>
             </div>
         </div>
         <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={() => setModalIsOpen(false)}
+        isOpen={modalShowIsOpen}
+        onRequestClose={() => setModalShowIsOpen(false)}
         contentLabel="Example Modal"
         style={{
           content: {
@@ -115,11 +173,155 @@ const Notebook=()=>{
             bottom: 'auto',
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
+            boxShadow:"0px 0px 10px #e2e2e2",
+            border:"none",
+            width:"500px",
+            height:"500px",
+            position:"relative"
           },
         }}
       >
-        <h2>Hello</h2>
-        <button onClick={() => setModalIsOpen(false)}>Close Modal</button>
+        <div className="p-[16px] ">
+            <div className="py-[4px]">
+              <label className="font-bold">Lớp học: </label>
+              <span>10A2</span>
+            </div>
+            <div className="py-[4px]">
+              <label className="font-bold">Môn: </label>
+              <span>10A2</span>
+            </div>
+            <div className="py-[4px]">
+              <label className="font-bold">Giáo viên: </label>
+              <span>10A2</span>
+            </div>
+            <div className="py-[4px]">
+              <label className="font-bold">Sỉ số: </label>
+              <span>10A2</span>
+            </div>
+            <div className="py-[4px]">
+              <label className="font-bold">Nội dung bài học</label>
+              <div className="w-[100%] h-[100px] px-[8px] py-[8px] mt-[8px] rounded bg-[#ececec]">Đại số tích phân</div>
+            </div>
+            <div className="py-[4px]">
+              <label className="font-bold">Nhận xét</label>
+              <div className="w-[100%] h-[100px] px-[8px] py-[8px] mt-[8px] rounded bg-[#ececec]">Lớp học tốt</div>
+    
+            </div>
+        </div>
+    
+        <button onClick={() => setModalShowIsOpen(false)}
+        className="absolute top-[15px] right-[20px] hover:text-[blue]">Đóng</button>
+      </Modal>
+      <Modal
+        isOpen={modalUpdateIsOpen}
+        onRequestClose={() => setModalUpdateIsOpen(false)}
+        contentLabel="Example Modal"
+        style={{
+          content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            boxShadow:"0px 0px 10px #e2e2e2",
+            border:"none",
+            width:"500px",
+            height:"500px",
+            position:"relative"
+          },
+        }}
+      >
+        <div className="p-[16px] ">
+            <div className="py-[4px]">
+              <label className="font-bold">Sỉ số: </label>
+              <span>42/45</span>
+              <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
+              onClick={()=>{setModalAttendIsOpen(true)}}>Điểm danh</button>
+            </div>
+            <div className="py-[4px]">
+              <label className="font-bold">Nội dung bài học</label>
+              <textarea className="w-[100%] h-[100px] px-[8px] py-[8px] mt-[8px] rounded bg-[#ececec]">Đại số tích phân</textarea>
+            </div>
+            <div className="py-[4px]">
+              <label className="font-bold">Nhận xét</label>
+              <textarea className="w-[100%] h-[100px] px-[8px] py-[8px] mt-[8px] rounded bg-[#ececec]">Lớp học tốt</textarea>
+    
+            </div>
+            <div className="flex justify-end mt-[32px]">
+            <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]">Lưu</button>
+            </div> 
+        </div>
+  
+        <button onClick={() => setModalUpdateIsOpen(false)}
+        className="absolute top-[15px] right-[20px] hover:text-[blue]">Đóng</button>
+      </Modal>
+      <Modal
+        isOpen={modalAttendIsOpen}
+        onRequestClose={() => setModalAttendIsOpen(false)}
+        contentLabel="Example Modal"
+        style={{
+          content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            boxShadow:"0px 0px 10px #e2e2e2",
+            border:"none",
+            width:"500px",
+            height:"500px",
+            position:"relative"
+          },
+        }}
+      >
+        <div className="p-[16px] ">
+          <div className="font-bold">Điểm danh</div>
+            <div className="py-[4px]">
+              <label className="font-bold">Sỉ số: </label>
+              <span>{attendStudentCount}/45</span>
+            </div>
+           <div className="overflow-y-scroll overflow-x-hidden h-[350px] mt-[24px]">
+            <table className="w-[400px]">
+              <thead>
+                <tr>
+                  <th className="px-[16px]">STT</th>
+                  <th className="px-[16px]">Họ và tên</th>
+                  <th className="px-[16px]">Vắng</th>
+                </tr>
+              </thead>
+              <tbody>
+                {attend.map((student,index)=>{
+                  return <tr>
+                  <td className="text-center">{index+1}</td>
+                  <td className="text-center">{student.name}</td>
+                  <td className="text-center">
+                    <input className="w-[20px] h-[20px]"type="checkbox" checked={!student.attend} 
+                    onClick={()=>{setAttend((prev)=>{
+                      return prev.map((item,idx)=>{
+
+                        if(idx===index){
+                          item.attend=!item.attend
+                        }
+                        return item;
+                      })
+                    });
+                    //console.log("click")
+                    }}/>
+                  </td>
+                </tr>
+                })}
+
+              </tbody>
+            </table>
+           </div>
+           
+       
+        </div>
+  
+        <button onClick={() => setModalAttendIsOpen(false)}
+        className="absolute top-[15px] right-[20px] hover:text-[blue]">Đóng</button>
       </Modal>
     </div>
 }
