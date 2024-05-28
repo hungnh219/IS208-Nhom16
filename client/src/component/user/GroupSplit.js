@@ -42,7 +42,7 @@ const GroupSplitter = () => {
           <textarea
             rows="10"
             cols="30"
-            placeholder="Enter names, one per line"
+            placeholder="Nhập vào tên học sinh từng dòng một."
             value={input}
             onChange={(e) => setInput(e.target.value)}
             className=" bg-[#eae9e9] shadow-xl p-[16px]"

@@ -1,7 +1,6 @@
 import Sidebar from './Sidebar';
 import SpinWheel from "./SpinWheel"
 import GroupSplit from "./GroupSplit";
-import {Link} from "react-router-dom"
 import {useState} from "react"
 const Game=()=>{
     const [game,setGame]=useState(1)
@@ -23,8 +22,8 @@ const Game=()=>{
                </button>
                 </div>
 
-              {game==1 &&  <SpinWheel/>}
-              {game==2 && <GroupSplit/>}
+              {game===1 &&  <SpinWheel/>}
+              {game===2 && <GroupSplit/>}
             </div>
         </div>
     </div>

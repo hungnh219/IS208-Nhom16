@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SpinWheel, ISpinWheelProps } from 'spin-wheel-game';
+import { SpinWheel } from 'spin-wheel-game';
 
 const getRandomColor = () => {
   const r = Math.floor(Math.random() * 256);
