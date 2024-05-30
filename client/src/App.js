@@ -8,6 +8,10 @@ import Game from './component/user/Game';
 import Notebook from './component/user/Notebook';
 import ForgotPassword from './component/user/ForgotPassword';
 import ResetPassword from './component/user/ResetPassword';
+import Notification from "./component/admin/Notification"
+import Scheduled from "./component/admin/Scheduled"
+import User from "./component/admin/User"
+import { ToastContainer} from 'react-toastify';
 function App() {
   return (
     <div className="App">
@@ -19,7 +23,11 @@ function App() {
         <Route path="/notebook" element={<Notebook/>}></Route>
         <Route path="/forgot_password" element={<ForgotPassword/>}></Route>
         <Route path="/reset_password" element={<ResetPassword/>}></Route>
+        <Route path="/admin/notification" element={<Notification/>}></Route>
+        <Route path="/admin/scheduled" element={<Scheduled/>}></Route>
+        <Route path="/admin/user" element={<User/>}></Route>
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
