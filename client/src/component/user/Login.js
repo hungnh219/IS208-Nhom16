@@ -24,7 +24,10 @@ const Login = () => {
             console.log(JSON.stringify({ email: username, password: password }))
             if (data.success) {
                 localStorage.setItem('teacher', JSON.stringify(data.teacherData))
-                navigate("/home");
+                if(data.role == "Giáo viên" || data.role == "giáo viên")
+                    navigate("/home");
+                else
+                    navigate("/admin/notification")
             }
         } catch (error) {
             console.error('Login error:', error);

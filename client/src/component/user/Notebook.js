@@ -23,7 +23,7 @@ const Notebook=()=>{
     };
     const scheduleData = [
       {
-        day: 2,
+        day: "Thứ 2",
         lesson: 2,
         subject: "Toán",
         classNumber: "42/45",
@@ -36,17 +36,24 @@ const Notebook=()=>{
         subject: "Toán",
         classNumber: "42/45",
         teacher: "Nguyễn Văn A",
-        evaluate:"Khá"
+        evaluate:"Lớp rất ồn, không tập trung"
       },
       {
-        day: 3,
+        day: "Thứ 2",
         lesson: 2,
         subject: "Lí",
         classNumber: "42/45",
         teacher: "Nguyễn Văn B",
         evaluate:"Tốt"
       },
-   
+      {
+        day: 3,
+        lesson: 4,
+        subject: "Lí",
+        classNumber: "42/45",
+        teacher: "Nguyễn Văn B",
+        evaluate:"Tốt"
+      },
        
       ];
     const listStudents=[
@@ -57,6 +64,12 @@ const Notebook=()=>{
       {name:"Nguyễn Văn Ad",attend:false},
       {name:"Nguyễn Văn As",attend:true},
       {name:"Nguyễn Văn Ae",attend:true},
+      {name:"Nguyễn Văn A123",attend:false},
+      {name:"Nguyễn Văn 321312312",attend:false},
+      {name:"Nguyễn Văn A321312",attend:false},
+      {name:"Nguyễn Văn Ay",attend:false},
+      {name:"Nguyễn Văn Ay",attend:false},
+      {name:"Nguyễn Văn Ay",attend:false},
       {name:"Nguyễn Văn Ay",attend:false},
     ]  
     const groupDays = groupBy(scheduleData, item => item.day);
@@ -75,9 +88,13 @@ const Notebook=()=>{
         setYear(e.target.value);
       };
       const handleChangeClass = (e) => {
+        console.log('check', typeof(e.target.value))
+        console.log('check', e.target.value)
         setClasses(e.target.value);
       };
       const handleChangeWeek = (e) => {
+        console.log('check', typeof(e.target.value))
+        console.log('check', e.target.value)
         setWeek(e.target.value);
       };
     return <div className="flex bg-[#e6e6ee] w-[100%] min-h-[100vh]">
@@ -86,14 +103,14 @@ const Notebook=()=>{
         <div className="flex justify-center">
         <label className="font-bold mr-[8px] ml-[16px]">Lớp</label>
       <select value={classes} onChange={handleChangeClass} className="border-[1px] border-[black]"> 
-          <option value={"10A1"}>10A1</option>
-          <option value={"10A2"}>10A2</option>
-          <option value={"10A3"}>10A3</option>
-          <option value={"10A4"}>10A4</option>
-          <option value={"11A1"}>11A1</option>
-          <option value={"11A2"}>11A2</option>
-          <option value={"11A3"}>11A3</option>
-          <option value={"11A4"}>11A4</option>
+          <option value={"10C1"}>10C1</option>
+          <option value={"10C2"}>10C2</option>
+          <option value={"10C3"}>10C3</option>
+          <option value={"10C4"}>10C4</option>
+          <option value={"11B1"}>11B1</option>
+          <option value={"11B2"}>11B2</option>
+          <option value={"11B3"}>11B3</option>
+          <option value={"11B4"}>11B4</option>
           <option value={"12A1"}>12A1</option>
           <option value={"12A2"}>12A2</option>
           <option value={"12A3"}>12A3</option>
@@ -235,7 +252,7 @@ const Notebook=()=>{
         <div className="p-[16px] ">
             <div className="py-[4px]">
               <label className="font-bold">Sỉ số: </label>
-              <span>42/45</span>
+              <span>{attendStudentCount}/{listStudents.length}</span>
               <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
               onClick={()=>{setModalAttendIsOpen(true)}}>Điểm danh</button>
             </div>
@@ -280,7 +297,7 @@ const Notebook=()=>{
           <div className="font-bold">Điểm danh</div>
             <div className="py-[4px]">
               <label className="font-bold">Sỉ số: </label>
-              <span>{attendStudentCount}/45</span>
+              <span>{attendStudentCount}/{listStudents.length}</span>
             </div>
            <div className="overflow-y-scroll overflow-x-hidden h-[350px] mt-[24px]">
             <table className="w-[400px]">
