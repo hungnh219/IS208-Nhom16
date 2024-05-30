@@ -307,7 +307,6 @@ const Notebook=()=>{
                         return item;
                       })
                     });
-                    //console.log("click")
                     }}/>
                   </td>
                 </tr>
