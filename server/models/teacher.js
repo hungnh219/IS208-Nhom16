@@ -21,14 +21,14 @@ const teacherSchema = new mongoose.Schema({
     },
     gender: {
         type: String,
-        enum: ['Male', 'Female', 'Other'],
+        enum: ['Male', 'Female', 'Other', 'male', 'female', 'other'],
         required: true
     },
-    // role: {
-    //     type: mongoose.Types.ObjectId, ref: 'Role',
-    //     enum: ['1', '2'],
-    //     default: '1'
-    // },
+    role: {
+        type: mongoose.Types.ObjectId,
+        ref: 'Role',
+        required: true
+    },
     dateOfBirth: {
         type: String,
     },
@@ -38,6 +38,11 @@ const teacherSchema = new mongoose.Schema({
     phoneNumber: {
         type: String,
         require: true
+    },
+    subject: {
+        type: mongoose.Types.ObjectId,
+        ref: 'Subject',
+        required: true
     }
 });
 

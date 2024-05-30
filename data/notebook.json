@@ -1,0 +1,14 @@
+[
+    {
+        "class": "10C1",
+        "teacherEmail": "hungnh219@gmail.com",
+        "subjectId": "001",
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "01",
+        "absentStudents": [
+            "hongnguyen@gmail.com",
+            "teststudent1@gmail.com"
+        ]
+    }
+]

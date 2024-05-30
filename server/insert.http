@@ -1,1 +1,20 @@
-POST http://localhost:5000/api/insert/
+# insert teacher data
+###
+POST http://localhost:3000/api/teacher/insert
+
+# insert class data
+###
+POST http://localhost:3000/api/class/insert
+
+# insert lesson data
+###
+POST http://localhost:3000/api/lesson/insert
+
+# insert student data
+###
+POST http://localhost:3000/api/student/insert
+
+# insert notebook data
+###
+POST http://localhost:3000/api/notebook/insert
+

@@ -1,0 +1,74 @@
+[
+    {
+        "email": "hungnh219@gmail.com",
+        "password": "giaovien01",
+        "firstName": "Hưng",
+        "lastName": "Nguyễn Hoàng",
+        "gender": "male",
+        "phoneNumber": "0909402109",
+        "roleId": "001",
+        "subjectId": "001",
+        "avatar": "link_anh",
+        "dateOfBirth": "21/09/2003"
+    },
+    {
+        "email": "21521247@gm.uit.edu.vn",
+        "password": "teacher02",
+        "firstName": "Như",
+        "lastName": "Trần Thị Tâm",
+        "gender": "female",
+        "phoneNumber": "0706770436",
+        "roleId": "001",
+        "subjectId": "002",
+        "avatar": "link_anh",
+        "dateOfBirth": "21/09/2003"
+    },
+    {
+        "email": "2152xxxx@gm.uit.edu.vn",
+        "password": "teacher03",
+        "firstName": "Thiện",
+        "lastName": "Đinh Công",
+        "gender": "Male",
+        "phoneNumber": "0706770436",
+        "roleId": "001",
+        "subjectId": "003",
+        "avatar": "link_anh",
+        "dateOfBirth": "21/09/2003"
+    },
+    {
+        "email": "2152yyyy@gm.uit.edu.vn",
+        "password": "teacher04",
+        "firstName": "Phúc",
+        "lastName": "Cao",
+        "gender": "male",
+        "phoneNumber": "0706770436",
+        "roleId": "001",
+        "subjectId": "004",
+        "avatar": "link_anh",
+        "dateOfBirth": "21/09/2003"
+    },
+    {
+        "email": "2152zzzz@gm.uit.edu.vn",
+        "password": "teacher05",
+        "firstName": "Hiển",
+        "lastName": "Nguyễn Văn",
+        "gender": "Male",
+        "phoneNumber": "0706770436",
+        "roleId": "001",
+        "subjectId": "004",
+        "avatar": "link_anh",
+        "dateOfBirth": "21/09/2003"
+    },
+    {
+        "email": "21520895@gm.uit.edu.vn",
+        "password": "teacher02",
+        "firstName": "Hưng fake",
+        "lastName": "Nguyễn Hoàng",
+        "gender": "female",
+        "phoneNumber": "0706770436",
+        "roleId": "002",
+        "subjectId": "001",
+        "avatar": "link_anh",
+        "dateOfBirth": "21/09/2003"
+    }
+]

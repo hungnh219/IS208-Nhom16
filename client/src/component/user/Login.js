@@ -1,16 +1,35 @@
 // src/Login.js
-import React, { useState } from 'react';
-import {useNavigate} from "react-router-dom"
+import React, { useState, useEffect } from 'react';
+import {json, useNavigate} from "react-router-dom"
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    const handleLogin = (event) => {
+    const handleLogin = async (event) => {
         event.preventDefault();
-       navigate("/home");
-       
+        try {
+            const response = await fetch(`http://localhost:3000/api/teacher/login`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email: username, password: password })
+            });
+
+            const data = await response.json();
+            
+            console.log(data)
+            console.log(JSON.stringify({ email: username, password: password }))
+            if (data.success) {
+                localStorage.setItem('teacher', JSON.stringify(data.teacherData))
+                navigate("/home");
+            }
+        } catch (error) {
+            console.error('Login error:', error);
+        }
+        // navigate("/home");
     };
 
     return (

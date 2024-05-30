@@ -4,10 +4,27 @@ const notebookSchema = new mongoose.Schema({
     class: {
         type: mongoose.Types.ObjectId, ref: 'Class'
     },
+    subject: {
+        type: mongoose.Types.ObjectId, ref: 'Subject'
+    },
+    teacher: {
+        type: mongoose.Types.ObjectId, ref: 'Teacher'
+    },
+    content: {
+        type: String,
+        require: true
+    },
+    comment: {
+        type: String,
+        require: true
+    },
+    absentStudents: [{
+        type: mongoose.Types.ObjectId, ref: 'Student'
+    }],
     week: {
         type: String,
-    },
-    notebooks: [{
-        type: mongoose.Types.ObjectId, ref: 'NotebookDetail'
-    }]
+        require: true
+    }
 })
+
+module.exports = mongoose.model('Notebook', notebookSchema)

@@ -1,0 +1,97 @@
+[
+    {
+        "firstName": "Hồng",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent01@gmail.com",
+        "gender": "female",
+        "class": "10C1"
+    },
+    {
+        "firstName": "hehe",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent02@gmail.com",
+        "gender": "female",
+        "class": "10C1"
+    },
+    {
+        "firstName": "321",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent03@gmail.com",
+        "gender": "female",
+        "class": "10C2"
+    },{
+        "firstName": "312312",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent04@gmail.com",
+        "gender": "female",
+        "class": "10C2"
+    },
+    {
+        "firstName": "h321312ehe",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent05@gmail.com",
+        "gender": "female",
+        "class": "11B1"
+    },
+    {
+        "firstName": "hehe",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent06@gmail.com",
+        "gender": "female",
+        "class": "11B1"
+    },
+    {
+        "firstName": "Hồng",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent07@gmail.com",
+        "gender": "female",
+        "class": "11B2"
+    },
+    {
+        "firstName": "Hồng",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent08@gmail.com",
+        "gender": "female",
+        "class": "11B2"
+    },
+    {
+        "firstName": "321312fdsfsd",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent09@gmail.com",
+        "gender": "female",
+        "class": "12A1"
+    },
+    {
+        "firstName": "fdsfdas",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent10@gmail.com",
+        "gender": "female",
+        "class": "12A1"
+    },
+    {
+        "firstName": "dsadas",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent11@gmail.com",
+        "gender": "female",
+        "class": "12A2"
+    },
+    {
+        "firstName": "21321",
+        "lastName": "Nguyễn Thị",
+        "dateOfBirth": "21/09/2008",
+        "email": "teststudent12@gmail.com",
+        "gender": "female",
+        "class": "12A2"
+    }
+]
