@@ -1,4 +1,5 @@
 import Sidebar from './Sidebar';
+import PanelAdmin from "../admin/Sidebar"
 import {Link} from "react-router-dom"
 const notify=[
     {id:"khfdhkslf",content:"hello"},
