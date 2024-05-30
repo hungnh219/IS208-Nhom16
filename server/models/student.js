@@ -15,12 +15,12 @@ const studentSchema = new mongoose.Schema({
         unique: true
     },
     dateOfBirth: {
-        type: Date,
+        type: String,
         required: true
     },
     gender: {
         type: String,
-        enum: ['Male', 'Female', 'Other'],
+        enum: ['Male', 'Female', 'Other', 'male', 'female', 'other'],
         required: true
     },
     class: {

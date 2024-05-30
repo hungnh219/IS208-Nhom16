@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-var roleSchema = new mongoose.Schema({
+const roleSchema = new mongoose.Schema({
     code: {
         type: String,
         require: true,

@@ -108,16 +108,7 @@ const Notebook=()=>{
           }
           
       </select>
-      <label className="font-bold mr-[8px] ml-[16px]">Học kì</label>
-      <select value={semester} onChange={handleChangeSemester} className="border-[1px] border-[black]"> 
-          <option value={"1"}>1</option>
-          <option value={"2"}>2</option>
-      </select>
-      <label className="font-bold mr-[8px] ml-[16px]">Năm học</label>
-      <select value={year} onChange={handleChangeYear} className="border-[1px] border-[black]"> 
-          <option value={"2022-2023"}>2022-2023</option>
-          <option value={"2023-2024"}>2023-2024</option>
-      </select>
+      <label className="font-bold mr-[8px] ml-[16px]">Năm học: 2023-2024</label>
     </div>
           
     
