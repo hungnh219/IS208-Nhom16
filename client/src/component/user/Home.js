@@ -6,7 +6,9 @@ const notify=[
     {id:"reirwiruewi",content:"nosoifdjifj"}
 ]
 const Home=()=>{
-    console.log(localStorage.getItem('teacher'))
+    const teacher = localStorage.getItem('teacherId')
+    console.log(teacher)
+    console.log('12345', typeof teacher)
 
     return <div className="flex bg-[#e6e6ee] w-[100%] min-h-[100vh] ">
         <Sidebar/>

@@ -23,7 +23,7 @@ const Login = () => {
             console.log(data)
             console.log(JSON.stringify({ email: username, password: password }))
             if (data.success) {
-                localStorage.setItem('teacher', JSON.stringify(data.teacherData))
+                localStorage.setItem('teacherId', data.teacherData._id)
                 if(data.role == "Giáo viên" || data.role == "giáo viên")
                     navigate("/home");
                 else

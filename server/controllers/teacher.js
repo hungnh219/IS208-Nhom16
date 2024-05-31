@@ -122,7 +122,7 @@ const deleteTeacherByEmail = async (req, res) => {
 
 const login = async (req, res) => {
     const { email, password } = req.body;
-    console.log(req.body)
+    // console.log(req.body)
     if (!email || !password) {
         return res.status(400).json({
             success: false,
@@ -130,17 +130,23 @@ const login = async (req, res) => {
         })
     }
 
-    const response = await Teacher.findOne({email: email})
+    console.log(email, password)
+    const teacher = await Teacher.findOne({email: email})
+    const isCorrectPassword = await teacher.isCorrectPassword(password)
+    console.log('check password', isCorrectPassword)
     
-    if (response && response.isCorrectPassword(email)) {
+    if (teacher &&  isCorrectPassword) {
         // khong tra password va role ve client
-        const { password, role, ...teacherData } = response.toObject();
+        const { password, role, ...teacherData } = teacher.toObject();
 
-        console.log(`${response.firstName} login successfully`);
+        const teacherRole = await Role.findById(role)
+
+        console.log(`${teacher.firstName} login successfully`);
         return res.status(200).json({
             success: true,
             message: `${teacherData.firstName} login successfully`,
-            teacherData
+            teacherData,
+            role: teacherRole.name
         })
     } else {
         console.log('Login failed');

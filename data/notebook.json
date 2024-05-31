@@ -1,14 +1,137 @@
 [
     {
-        "class": "10C1",
+        "class": "11B1",
         "teacherEmail": "hungnh219@gmail.com",
         "subjectId": "001",
+        "day": 3,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "02",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "12A3",
+        "teacherEmail": "hungnh219@gmail.com",
+        "subjectId": "001",
+        "day": 6,
+        "lesson": 7,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "03",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "hungnh219@gmail.com",
+        "subjectId": "001",
+        "day": 5,
+        "lesson": 3,
         "content": "Số phức",
         "comment": "Lớp ngoan",
         "week": "01",
         "absentStudents": [
-            "hongnguyen@gmail.com",
-            "teststudent1@gmail.com"
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "11B3",
+        "teacherEmail": "hungnh219@gmail.com",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 9,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "04",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "12A2",
+        "teacherEmail": "hungnh219@gmail.com",
+        "subjectId": "001",
+        "day": 2,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "03",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "11B4",
+        "teacherEmail": "hungnh219@gmail.com",
+        "subjectId": "001",
+        "day": 4,
+        "lesson": 6,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "01",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "12A1",
+        "teacherEmail": "hungnh219@gmail.com",
+        "subjectId": "001",
+        "day": 5,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "02",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C3",
+        "teacherEmail": "hungnh219@gmail.com",
+        "subjectId": "001",
+        "day": 3,
+        "lesson": 8,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "04",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "12A4",
+        "teacherEmail": "hungnh219@gmail.com",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "03",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
         ]
     }
 ]

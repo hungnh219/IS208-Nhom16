@@ -5,22 +5,46 @@
     },
     {
         "name": "10C2",
-        "teacherEmail": "hungnh219@gmail.com"
-    },
-    {
-        "name": "11B1",
-        "teacherEmail": "2152xxxx@gm.uit.edu.vn"
-    },
-    {
-        "name": "11B2",
-        "teacherEmail": "2152yyyy@gm.uit.edu.vn"
-    },
-    {
-        "name": "12A1",
         "teacherEmail": "21520895@gm.uit.edu.vn"
     },
     {
+        "name": "10C3",
+        "teacherEmail": "21522064@gm.uit.edu.vn"
+    },
+    {
+        "name": "10C4",
+        "teacherEmail": "21522617@gm.uit.edu.vn"
+    },
+    {
+        "name": "11B1",
+        "teacherEmail": "21521300@gm.uit.edu.vn"
+    },
+    {
+        "name": "11B2",
+        "teacherEmail": "giaovien06@gmail.com"
+    },
+    {
+        "name": "11B3",
+        "teacherEmail": "giaovien07@gmail.com"
+    },
+    {
+        "name": "11B4",
+        "teacherEmail": "giaovien08@gmail.com"
+    },
+    {
+        "name": "12A1",
+        "teacherEmail": "giaovien09@gmail.com"
+    },
+    {
         "name": "12A2",
-        "teacherEmail": "2152zzzz@gm.uit.edu.vn"
+        "teacherEmail": "giaovien10@gmail.com"
+    },
+    {
+        "name": "12A3",
+        "teacherEmail": "giaovien11@gmail.com"
+    },
+    {
+        "name": "12A4",
+        "teacherEmail": "giaovien12@gmail.com"
     }
 ]

@@ -10,6 +10,14 @@ const notebookSchema = new mongoose.Schema({
     teacher: {
         type: mongoose.Types.ObjectId, ref: 'Teacher'
     },
+    day: {
+        type: Number,
+        require: true
+    },
+    lesson: {
+        type: Number,
+        require: true
+    },
     content: {
         type: String,
         require: true

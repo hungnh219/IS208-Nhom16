@@ -1,5 +1,5 @@
 import Sidebar from './Sidebar';
-import {useState} from "react";
+import {useState, useEffect} from "react"
 import Modal from 'react-modal';
 
 
@@ -8,6 +8,36 @@ const Notebook=()=>{
     const [modalShowIsOpen, setModalShowIsOpen] = useState(false);
     const [modalUpdateIsOpen, setModalUpdateIsOpen] = useState(false);
     const [modalAttendIsOpen, setModalAttendIsOpen] = useState(false);
+
+    const [notebookData, setNotebookData] = useState({})
+    const [notebookShowed, setNotebookShowed] = useState([])
+    // const [notebookShowed, setNotebookShowed] = useState(notebookData['11B1']['02'])
+
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await fetch(`http://localhost:3000/api/notebook/getAll`);
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const data = await response.json();
+          
+          console.log('check', data)
+          console.log('check b4 01', data.notebookData['11B4']['01'])
+          setNotebookData(data.notebookData);
+          setNotebookShowed(data.notebookData['11B4']['01']);
+        } catch (error) {
+          console.error('Login error:', error);
+        }
+      };
+      fetchData();
+    }, []);
+    useEffect(() => {
+      console.log('Updated notebook data:', notebookData);
+    }, [notebookData]);
+    useEffect(() => {
+      console.log('Updated notebookShowed:', notebookShowed);
+    }, [notebookShowed]);
     const groupBy = (array, keyGetter) => {
       return array.reduce((result, item) => {
         // Lấy giá trị của key dựa trên hàm keyGetter
@@ -26,34 +56,34 @@ const Notebook=()=>{
         day: "Thứ 2",
         lesson: 2,
         subject: "Toán",
-        classNumber: "42/45",
+        // quantity: "42/45",
         teacher: "Nguyễn Văn A",
-        evaluate:"Tốt"
+        comment:"Tốt"
       },
-      {
-        day: 2,
-        lesson: 3,
-        subject: "Toán",
-        classNumber: "42/45",
-        teacher: "Nguyễn Văn A",
-        evaluate:"Lớp rất ồn, không tập trung"
-      },
-      {
-        day: "Thứ 2",
-        lesson: 2,
-        subject: "Lí",
-        classNumber: "42/45",
-        teacher: "Nguyễn Văn B",
-        evaluate:"Tốt"
-      },
-      {
-        day: 3,
-        lesson: 4,
-        subject: "Lí",
-        classNumber: "42/45",
-        teacher: "Nguyễn Văn B",
-        evaluate:"Tốt"
-      },
+      // {
+      //   day: 2,
+      //   lesson: 3,
+      //   subject: "Toán",
+      //   // quantity: "42/45",
+      //   teacher: "Nguyễn Văn A",
+      //   comment:"Lớp rất ồn, không tập trung"
+      // },
+      // {
+      //   day: "Thứ 2",
+      //   lesson: 2,
+      //   subject: "Lí",
+      //   // quantity: "42/45",
+      //   teacher: "Nguyễn Văn B",
+      //   comment:"Tốt"
+      // },
+      // {
+      //   day: 3,
+      //   lesson: 4,
+      //   subject: "Lí",
+      //   // quantity: "42/45",
+      //   teacher: "Nguyễn Văn B",
+      //   comment:"Tốt"
+      // },
        
       ];
     const listStudents=[
@@ -72,7 +102,10 @@ const Notebook=()=>{
       {name:"Nguyễn Văn Ay",attend:false},
       {name:"Nguyễn Văn Ay",attend:false},
     ]  
-    const groupDays = groupBy(scheduleData, item => item.day);
+
+    // console.log('note book c2', notebookData["12A1"]["02"])
+    // console.log(typeof notebookData["10C2"]["01"])
+    const groupDays = groupBy(notebookShowed, item => item.day);
     const [classes,setClasses]=useState(2)
     const [week,setWeek]=useState(1)
     const [semester, setSemester] =useState(1);
@@ -147,7 +180,7 @@ const Notebook=()=>{
               <th>Thứ</th>
               <th>Tiết </th>
               <th>Môn học</th>
-              <th>Sỉ số</th>
+              {/* <th>Sỉ số</th> */}
               <th>Giáo viên</th>
               <th>Đánh giá</th>
               <th>Hành động</th>
@@ -160,9 +193,9 @@ const Notebook=()=>{
                   {id===0?<td rowspan={groupDays[key].length}>{item.day}</td>:""}
                 <td >{item.lesson}</td>
                 <td >{item.subject}</td>
-                <td >{item.classNumber}</td>
+                {/* <td >{item.quantity}</td> */}
                 <td >{item.teacher}</td>
-                <td >{item.evaluate}</td>
+                <td >{item.comment}</td>
                 <td >
                     <button className="px-[16px] py-[4px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
                     onClick={() => setModalShowIsOpen(true)}>Xem</button>
