@@ -1,73 +1,64 @@
 import Sidebar from "./Sidebar";
 import { useState } from "react";
 import Modal from "react-modal";
-
+import data from "../../data/10A1.json"
 Modal.setAppElement("#root");
+const scheduleData = [
+  {
+    day: 2,
+    lesson: 2,
+    subject: "Toán",
+    teacher: "Nguyễn Văn A",
+    evaluate: "Tốt",
+    content: "Đại số",
+    comment: "Năng nổ",
+  },
+  {
+    day: 2,
+    lesson: 3,
+    subject: "Toán",
+    teacher: "Nguyễn Văn A",
+    evaluate: "Khá",
+    content: "Thống kê",
+    comment: "Học tốt",
+    absentStudent:[]
+  },
+  {
+    day: 3,
+    lesson: 2,
+    subject: "Lí",
+    teacher: "Nguyễn Văn B",
+    evaluate: "Tốt",
+    content: "Vợ chồng a phủ",
+    comment: "Tốt",
+  },
+];
+const groupBy = (array, keyGetter) => {
+  return array.reduce((result, item) => {
+    // Lấy giá trị của key dựa trên hàm keyGetter
+    const key = keyGetter(item);
+    // Nếu chưa có nhóm nào cho key này, tạo nhóm mới
+    if (!result[key]) {
+      result[key] = [];
+    }
+    // Thêm item vào nhóm tương ứng
+    result[key].push(item);
+    return result;
+  }, {});
+};
 const Notebook = () => {
+  const listStudents = data
   const [modalShowIsOpen, setModalShowIsOpen] = useState(false);
   const [modalUpdateIsOpen, setModalUpdateIsOpen] = useState(false);
   const [modalAttendIsOpen, setModalAttendIsOpen] = useState(false);
-  const groupBy = (array, keyGetter) => {
-    return array.reduce((result, item) => {
-      // Lấy giá trị của key dựa trên hàm keyGetter
-      const key = keyGetter(item);
-      // Nếu chưa có nhóm nào cho key này, tạo nhóm mới
-      if (!result[key]) {
-        result[key] = [];
-      }
-      // Thêm item vào nhóm tương ứng
-      result[key].push(item);
-      return result;
-    }, {});
-  };
-  const scheduleData = [
-    {
-      day: 2,
-      lesson: 2,
-      subject: "Toán",
-      classNumber: "42/45",
-      teacher: "Nguyễn Văn A",
-      evaluate: "Tốt",
-      content: "Đại số",
-      comment: "Năng nổ",
-    },
-    {
-      day: 2,
-      lesson: 3,
-      subject: "Toán",
-      classNumber: "42/45",
-      teacher: "Nguyễn Văn A",
-      evaluate: "Khá",
-      content: "Thống kê",
-      comment: "Học tốt",
-    },
-    {
-      day: 3,
-      lesson: 2,
-      subject: "Lí",
-      classNumber: "42/45",
-      teacher: "Nguyễn Văn B",
-      evaluate: "Tốt",
-      content: "Vợ chồng a phủ",
-      comment: "Tốt",
-    },
-  ];
-  const listStudents = [
-    { name: "Nguyễn Văn A", attend: true },
-    { name: "Nguyễn Văn Af", attend: false },
-    { name: "Nguyễn Văn Ad", attend: true },
-    { name: "Nguyễn Văn A", attend: true },
-    { name: "Nguyễn Văn Ad", attend: false },
-    { name: "Nguyễn Văn As", attend: true },
-    { name: "Nguyễn Văn Ae", attend: true },
-    { name: "Nguyễn Văn Ay", attend: false },
-  ];
-  const groupDays = groupBy(scheduleData, (item) => item.day);
   const [classes, setClasses] = useState(2);
   const [days, setDays] = useState(2);
   const [week, setWeek] = useState(1);
+  const [teacher, setTeacher] = useState("")
   const [attend, setAttend] = useState(listStudents);
   const [lesson, setLesson] = useState(1);
+  const [subject,setSubject]=useState('')
+  const groupDays = groupBy(scheduleData, (item) => item.day);
   const [notebook, setNotebook] = useState(groupDays);
   let indexComment;
   let indexContent;
@@ -150,13 +141,17 @@ const Notebook = () => {
                       )}
                       <td>{item.lesson}</td>
                       <td>{item.subject}</td>
-                      <td>{item.classNumber}</td>
+                      <td>{"30/30"}</td>
                       <td>{item.teacher}</td>
                       <td>{item.evaluate}</td>
                       <td>
                         <button
                           className="px-[16px] py-[4px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
-                          onClick={() => setModalShowIsOpen(true)}
+                          onClick={() => {
+                            setModalShowIsOpen(true)
+                            setSubject(item.subject)
+                            setTeacher(item.teacher)
+                          }}
                         >
                           Xem
                         </button>
@@ -202,7 +197,7 @@ const Notebook = () => {
         <div className="p-[16px] ">
           <div className="py-[4px]">
             <label className="font-bold">Lớp học: </label>
-            <span>10A2</span>
+            <span>10A1</span>
           </div>
           <div className="py-[4px]">
             <label className="font-bold">Môn: </label>
@@ -210,22 +205,22 @@ const Notebook = () => {
           </div>
           <div className="py-[4px]">
             <label className="font-bold">Giáo viên: </label>
-            <span>10A2</span>
+            <span>{teacher}</span>
           </div>
           <div className="py-[4px]">
             <label className="font-bold">Sỉ số: </label>
-            <span>10A2</span>
+            <span>{attendStudentCount}/{attend.length}</span>
           </div>
           <div className="py-[4px]">
             <label className="font-bold">Nội dung bài học</label>
             <div className="w-[100%] h-[100px] px-[8px] py-[8px] mt-[8px] rounded bg-[#ececec]">
-              Đại số tích phân
+            {notebook[days][indexContent]?.content}
             </div>
           </div>
           <div className="py-[4px]">
             <label className="font-bold">Nhận xét</label>
             <div className="w-[100%] h-[100px] px-[8px] py-[8px] mt-[8px] rounded bg-[#ececec]">
-              Lớp học tốt
+            {notebook[days][indexComment]?.comment}
             </div>
           </div>
         </div>
@@ -260,7 +255,7 @@ const Notebook = () => {
         <div className="p-[16px] ">
           <div className="py-[4px]">
             <label className="font-bold">Sỉ số: </label>
-            <span>42/45</span>
+            <span>{attendStudentCount}/{attend.length}</span>
             <button
               className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
               onClick={() => {
@@ -351,7 +346,7 @@ const Notebook = () => {
           <div className="font-bold">Điểm danh</div>
           <div className="py-[4px]">
             <label className="font-bold">Sỉ số: </label>
-            <span>{attendStudentCount}/45</span>
+            <span>{attendStudentCount}/{attend.length}</span>
           </div>
           <div className="overflow-y-scroll overflow-x-hidden h-[350px] mt-[24px]">
             <table className="w-[400px]">
