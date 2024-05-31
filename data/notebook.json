@@ -1,13 +1,28 @@
 [
     {
         "class": "10C1",
-        "teacherEmail": "21520895@gm.uit.edu.vn",
-        "subjectId": "001",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
         "day": 2,
         "lesson": 1,
-        "content": "Số phức",
+        "content": "",
         "comment": "Lớp ngoan",
-        "week": "02",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 2,
+        "lesson": 2,
+        "content": "",
+        "comment": "Lớp ngoan",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -19,10 +34,896 @@
         "teacherEmail": "21520895@gm.uit.edu.vn",
         "subjectId": "001",
         "day": 2,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "Cần tập trung hơn",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 2,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Cần tập trung hơn",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 2,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Nghỉ học nhiều",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 3,
+        "lesson": 1,
+        "content": "",
+        "comment": "Nhiều bạn không mang sách",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 3,
+        "lesson": 2,
+        "content": "",
+        "comment": "Lớp quậy",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 3,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "Lớp quậy",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 3,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Cần tập trung hơn",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 3,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Cần tập trung hơn",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 4,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 4,
         "lesson": 2,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "02",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 4,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 4,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 4,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 5,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 5,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 5,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 5,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 5,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 6,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 6,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 6,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 6,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 6,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 7,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 7,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    
+
+
+
+    {
+        "class": "10C1",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 2,
+        "lesson": 1,
+        "content": "",
+        "comment": "Lớp ồn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 2,
+        "lesson": 2,
+        "content": "",
+        "comment": "Lớp ồn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 2,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "Thiếu phấn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 2,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Thiếu phấn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 2,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Nghỉ học nhiều",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 3,
+        "lesson": 1,
+        "content": "",
+        "comment": "Lớp nghỉ nhiều",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 3,
+        "lesson": 2,
+        "content": "",
+        "comment": "Lớp quậy",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 3,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "Lớp quậy",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 3,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Cần tập trung hơn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 3,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Cần tập trung hơn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 4,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 4,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 4,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 4,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 4,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 5,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 5,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 5,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 5,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 5,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 6,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 6,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 6,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 6,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 6,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 7,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 7,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien06@gmail.com",
+        "subjectId": "001",
+        "day": 2,
+        "lesson": 1,
+        "content": "",
+        "comment": "Cần tập trung hơn",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -31,13 +932,13 @@
     },
     {
         "class": "10C2",
-        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "teacherEmail": "giaovien06@gmail.com",
         "subjectId": "001",
-        "day": 3,
-        "lesson": 4,
-        "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "02",
+        "day": 2,
+        "lesson": 2,
+        "content": "",
+        "comment": "Cần tập trung hơn",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -46,13 +947,13 @@
     },
     {
         "class": "10C2",
-        "teacherEmail": "21520895@gm.uit.edu.vn",
-        "subjectId": "001",
-        "day": 3,
-        "lesson": 5,
+        "teacherEmail": "giaovien08@gmail.com",
+        "subjectId": "002",
+        "day": 2,
+        "lesson": 3,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "02",
+        "comment": "Giỏi",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -60,14 +961,885 @@
         ]
     },
     {
-        "class": "10C3",
-        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "class": "10C2",
+        "teacherEmail": "giaovien08@gmail.com",
+        "subjectId": "002",
+        "day": 2,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Giỏi",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien09@gmail.com",
+        "subjectId": "003",
+        "day": 2,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Nghỉ học nhiều",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien11@gmail.com",
+        "subjectId": "004",
+        "day": 3,
+        "lesson": 1,
+        "content": "",
+        "comment": "Nhiều bạn không mang sách",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien08@gmail.com",
+        "subjectId": "002",
+        "day": 3,
+        "lesson": 2,
+        "content": "",
+        "comment": "Lớp quậy",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien11@gmail.com",
+        "subjectId": "002",
+        "day": 3,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "Lớp quậy",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien06@gmail.com",
         "subjectId": "001",
         "day": 3,
         "lesson": 4,
         "content": "Số phức",
+        "comment": "Cần tập trung hơn",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien06@gmail.com",
+        "subjectId": "001",
+        "day": 3,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Cần tập trung hơn",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+
+    {
+        "class": "10C2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 4,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 4,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 4,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 4,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 4,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 5,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 5,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 5,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 5,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 5,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 6,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 6,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 6,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 6,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 6,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 7,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 7,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+
+
+
+
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien12@gmail.com",
+        "subjectId": "004",
+        "day": 2,
+        "lesson": 1,
+        "content": "",
         "comment": "Lớp ngoan",
-        "week": "02",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien12@gmail.com",
+        "subjectId": "004",
+        "day": 2,
+        "lesson": 2,
+        "content": "",
+        "comment": "Lớp ngoan",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien07@gmail.com",
+        "subjectId": "002",
+        "day": 2,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "Giỏi",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien07@gmail.com",
+        "subjectId": "002",
+        "day": 2,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Giỏi",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien06@gmail.com",
+        "subjectId": "001",
+        "day": 2,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Lớp quậy",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien12@gmail.com",
+        "subjectId": "004",
+        "day": 3,
+        "lesson": 1,
+        "content": "",
+        "comment": "Quá ồn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien12@gmail.com",
+        "subjectId": "004",
+        "day": 3,
+        "lesson": 2,
+        "content": "",
+        "comment": "Lớp không tập trung",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien12@gmail.com",
+        "subjectId": "004",
+        "day": 3,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "Lớp không tập trung",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien06@gmail.com",
+        "subjectId": "001",
+        "day": 3,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Cần tập trung hơn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "giaovien06@gmail.com",
+        "subjectId": "001",
+        "day": 3,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Cần tập trung hơn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+
+    {
+        "class": "10C2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 4,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 4,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 4,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 4,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 4,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 5,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 5,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 5,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 5,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 5,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 6,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 6,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 6,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 6,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 6,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521247@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": 7,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522617@gm.uit.edu.vn",
+        "subjectId": "003",
+        "day": 7,
+        "lesson": 3,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21522064@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C3",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Lớp không tập trung",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -76,13 +1848,60 @@
     },
     {
         "class": "10C3",
-        "teacherEmail": "21520895@gm.uit.edu.vn",
-        "subjectId": "001",
-        "day": 3,
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
         "lesson": 5,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "02",
+        "comment": "Lớp không tập trung",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "10C4",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Lớp ồn",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C4",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Lớp ồn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "11B1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Lớp không tập trung",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -91,13 +1910,29 @@
     },
     {
         "class": "11B1",
-        "teacherEmail": "hungnh219@gmail.com",
-        "subjectId": "001",
-        "day": 3,
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
         "lesson": 5,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "02",
+        "comment": "Lớp không tập trung",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "11B2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Lớp ồn",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -105,29 +1940,30 @@
         ]
     },
     {
-        "class": "12A3",
-        "teacherEmail": "hungnh219@gmail.com",
+        "class": "11B2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
         "subjectId": "001",
-        "day": 6,
-        "lesson": 7,
+        "day": 7,
+        "lesson": 5,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "03",
+        "comment": "Lớp ồn",
+        "week": "2",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
             "teststudent111@gmail.com"
         ]
     },
+
     {
-        "class": "10C2",
-        "teacherEmail": "hungnh219@gmail.com",
-        "subjectId": "001",
-        "day": 5,
-        "lesson": 3,
+        "class": "11B3",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
+        "lesson": 4,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "01",
+        "comment": "Lớp không tập trung",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -136,28 +1972,29 @@
     },
     {
         "class": "11B3",
-        "teacherEmail": "hungnh219@gmail.com",
-        "subjectId": "001",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
         "day": 7,
-        "lesson": 9,
+        "lesson": 5,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "04",
+        "comment": "Lớp không tập trung",
+        "week": "2",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
             "teststudent111@gmail.com"
         ]
     },
+
     {
-        "class": "12A2",
-        "teacherEmail": "hungnh219@gmail.com",
+        "class": "11B4",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
         "subjectId": "001",
-        "day": 2,
+        "day": 7,
         "lesson": 4,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "03",
+        "comment": "Lớp ồn",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -166,13 +2003,29 @@
     },
     {
         "class": "11B4",
-        "teacherEmail": "hungnh219@gmail.com",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
         "subjectId": "001",
-        "day": 4,
-        "lesson": 6,
+        "day": 7,
+        "lesson": 5,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "01",
+        "comment": "Lớp ồn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "12A1",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Lớp không tập trung",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -181,13 +2034,29 @@
     },
     {
         "class": "12A1",
-        "teacherEmail": "hungnh219@gmail.com",
-        "subjectId": "001",
-        "day": 5,
-        "lesson": 2,
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
+        "lesson": 5,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "02",
+        "comment": "Lớp không tập trung",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "12A2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Lớp ồn",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -195,14 +2064,61 @@
         ]
     },
     {
-        "class": "10C3",
-        "teacherEmail": "hungnh219@gmail.com",
+        "class": "12A2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
         "subjectId": "001",
-        "day": 3,
-        "lesson": 8,
+        "day": 7,
+        "lesson": 5,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "04",
+        "comment": "Lớp ồn",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "12A3",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Lớp không tập trung",
+        "week": "1",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "12A3",
+        "teacherEmail": "21521300@gm.uit.edu.vn",
+        "subjectId": "004",
+        "day": 7,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Lớp không tập trung",
+        "week": "2",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+
+    {
+        "class": "12A4",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 7,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Lớp ồn",
+        "week": "1",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
@@ -211,17 +2127,18 @@
     },
     {
         "class": "12A4",
-        "teacherEmail": "hungnh219@gmail.com",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
         "subjectId": "001",
         "day": 7,
-        "lesson": 1,
+        "lesson": 5,
         "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "03",
+        "comment": "Lớp ồn",
+        "week": "2",
         "absentStudents": [
             "teststudent001@gmail.com",
             "teststudent011@gmail.com",
             "teststudent111@gmail.com"
         ]
     }
+
 ]

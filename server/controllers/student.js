@@ -30,6 +30,38 @@ const insert = async (req, res) => {
     })
 }
 
+const getClassName = async (classId) => {
+    try {
+        const cls = await Class.findById(classId);
+        if (cls) {
+            return cls.name;
+        } else {
+            return null; // hoặc giá trị mặc định khác tùy bạn chọn
+        }
+    } catch (error) {
+        console.error("Error while fetching subject:", error);
+        return null; // hoặc xử lý lỗi theo cách khác tùy bạn chọn
+    }
+}
+
+const getAll = async (req, res) => {
+    const students = await Student.find().populate('class', 'name').lean();
+
+    const formattedStudents = students.map(student => {
+        return {
+            ...student,
+            class: student.class.name
+        };
+    });
+
+    return res.status(200).json({
+        success: true,
+        message: "get student data successfully!",
+        students: formattedStudents
+    })
+}
+
 module.exports = {
     insert,
+    getAll,
 }

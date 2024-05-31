@@ -11,6 +11,7 @@ const Notebook=()=>{
 
     const [notebookData, setNotebookData] = useState({})
     const [notebookShowed, setNotebookShowed] = useState([])
+
     // const [notebookShowed, setNotebookShowed] = useState(notebookData['11B1']['02'])
 
     useEffect(() => {
@@ -23,9 +24,9 @@ const Notebook=()=>{
           const data = await response.json();
           
           console.log('check', data)
-          console.log('check b4 01', data.notebookData['11B4']['01'])
+          console.log('check c1 01', data.notebookData['10C1']['1'])
           setNotebookData(data.notebookData);
-          setNotebookShowed(data.notebookData['11B4']['01']);
+          setNotebookShowed(data.notebookData['10C1']['1']);
         } catch (error) {
           console.error('Login error:', error);
         }
@@ -106,7 +107,7 @@ const Notebook=()=>{
     // console.log('note book c2', notebookData["12A1"]["02"])
     // console.log(typeof notebookData["10C2"]["01"])
     const groupDays = groupBy(notebookShowed, item => item.day);
-    const [classes,setClasses]=useState(2)
+    const [classes,setClasses]=useState(1)
     const [week,setWeek]=useState(1)
     const [semester, setSemester] =useState(1);
     const [year,setYear]=useState("2023-2024")
@@ -114,6 +115,12 @@ const Notebook=()=>{
     const attendStudentCount=attend.filter((student) =>{
       return student.attend;
     }).length;
+
+    const updateNotebook = () => {
+      // setNotebookShowed(notebookData[classes][week])
+      alert(classes + week)
+    }
+
     const handleChangeSemester = (e) => {
       setSemester(e.target.value);
     };
@@ -121,14 +128,28 @@ const Notebook=()=>{
         setYear(e.target.value);
       };
       const handleChangeClass = (e) => {
-        console.log('check', typeof(e.target.value))
-        console.log('check', e.target.value)
+        const cls = e.target.value;
+        console.log('test class', cls)
+        console.log('test class', typeof cls)
+        setNotebookShowed(notebookData[e.target.value][week])
         setClasses(e.target.value);
+        // updateNotebook()
       };
       const handleChangeWeek = (e) => {
-        console.log('check', typeof(e.target.value))
-        console.log('check', e.target.value)
-        setWeek(e.target.value);
+        let wk = e.target.value;
+
+        // let num = parseInt(wk, 10)
+        // if (num < 10) {
+        //   wk = wk.padStart(2, '0')
+        // }
+        // console.log('test week', wk)
+        // console.log('test week', typeof wk)
+        // if (wk == '1' || wk == '2' || wk == '3' || wk == '4') {
+        if (wk == '1' || wk == '2') {
+          setNotebookShowed(notebookData[classes][wk])
+        }
+        setWeek(wk);
+        // updateNotebook()
       };
     return <div className="flex bg-[#e6e6ee] w-[100%] min-h-[100vh]">
         <Sidebar/>
