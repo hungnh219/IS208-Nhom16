@@ -87,6 +87,7 @@ const MySpinWheel = () => {
               }).join("");;
               setNewSegmentsText(segmentTextClass)
             }}
+            value={classes}
           >
             <option value={""}>None</option>
             <option value={"10A1"}>10A1</option>

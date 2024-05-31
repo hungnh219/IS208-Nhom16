@@ -1,10 +1,23 @@
 import React, { useState } from "react";
-
+import dataStudent from "../../data/student.json";
 const GroupSplitter = () => {
+  const [classes, setClasses] = useState("");
   const [input, setInput] = useState("");
-  const [groupCount, setGroupCount] = useState("");
+  const [groupCount, setGroupCount] = useState(2);
   const [groups, setGroups] = useState([]);
-
+  const groupBy = (array, keyGetter) => {
+    return array.reduce((result, item) => {
+      // Lấy giá trị của key dựa trên hàm keyGetter
+      const key = keyGetter(item);
+      // Nếu chưa có nhóm nào cho key này, tạo nhóm mới
+      if (!result[key]) {
+        result[key] = [];
+      }
+      // Thêm item vào nhóm tương ứng
+      result[key].push(item);
+      return result;
+    }, {});
+  };
   const splitIntoRandomGroups = () => {
     const members = input.split("\n").filter((name) => name.trim() !== "");
     const shuffledMembers = shuffleArray(members);
@@ -33,7 +46,7 @@ const GroupSplitter = () => {
     }
     return array;
   };
-
+  const groupClass = groupBy(dataStudent, (item) => item.class);
   return (
     <div className="flex flex-col justify-center items-center gap-[24px]">
       <div className="flex justify-center items-center gap-[24px] ">
@@ -48,23 +61,52 @@ const GroupSplitter = () => {
             className=" bg-[#eae9e9] shadow-xl p-[16px]"
           />
         </div>
+        <div className="flex flex-col">
         <div>
-          <label>
-            Số lượng nhóm:
-            <input
-              type="number"
-              value={groupCount}
-              onChange={(e) => setGroupCount(e.target.value)}
-              className=" ml-[8px] border-[1px] border-[black] w-[50px] text-center"
-            />
-          </label>
+          <label >Chọn lớp:</label>
+          <select className="border-black border-[1px] ml-[8px]"
+             onChange={(e) => {
+              setClasses(e.target.value);
+              const classList=groupClass[e.target.value].map((seg) => {
+                return seg.firstName +" "+seg.lastName + "\n";
+              }).join("");;
+              setInput(classList)
+            }}
+            value={classes}>
+          <option value={""}>None</option>
+            <option value={"10A1"}>10A1</option>
+            <option value={"10A2"}>10A2</option>
+            <option value={"10A3"}>10A3</option>
+            <option value={"10A4"}>10A4</option>
+            <option value={"11A1"}>11A1</option>
+            <option value={"11A2"}>11A2</option>
+            <option value={"11A3"}>11A3</option>
+            <option value={"11A4"}>11A4</option>
+            <option value={"12A1"}>12A1</option>
+            <option value={"12A2"}>12A2</option>
+            <option value={"12A3"}>12A3</option>
+            <option value={"12A4"}>12A4</option>
+          </select>
         </div>
-        <button
-          onClick={splitIntoRandomGroups}
-          className="shadow-xl px-[16px] py-[8px] text-[white] bg-[#266eff]"
-        >
-          Chia nhóm
-        </button>
+          <div className="py-[16px]">
+            <label>
+              Số lượng nhóm:
+              <input
+                type="number"
+                value={groupCount}
+                min="2"
+                onChange={(e) => setGroupCount(e.target.value)}
+                className=" ml-[8px] border-[1px] border-[black] w-[50px] text-center"
+              />
+            </label>
+          </div>
+          <button
+            onClick={splitIntoRandomGroups}
+            className="shadow-xl px-[16px] py-[8px] text-[white] bg-[#266eff]"
+          >
+            Chia nhóm
+          </button>
+        </div>
       </div>
       {groups.length > 0 && (
         <div className="flex justify-center items-center gap-[24px] ">

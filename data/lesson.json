@@ -1,0 +1,30 @@
+[
+    {
+        "class": "10C1",
+        "teacherEmail": "hungnh219@gmail.com",
+        "subjectId": "001",
+        "day": "friday",
+        "orderNumber": "7"
+    },
+    {
+        "class": "11C2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": "monday",
+        "orderNumber": "2"
+    },
+    {
+        "class": "12C3",
+        "teacherEmail": "hungnh219@gmail.com",
+        "subjectId": "002",
+        "day": "monday",
+        "orderNumber": "2"
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "002",
+        "day": "monday",
+        "orderNumber": "2"
+    }
+]
