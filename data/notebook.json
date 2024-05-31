@@ -1,5 +1,95 @@
 [
     {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 2,
+        "lesson": 1,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "02",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C1",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 2,
+        "lesson": 2,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "02",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 3,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "02",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C2",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 3,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "02",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C3",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 3,
+        "lesson": 4,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "02",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
+        "class": "10C3",
+        "teacherEmail": "21520895@gm.uit.edu.vn",
+        "subjectId": "001",
+        "day": 3,
+        "lesson": 5,
+        "content": "Số phức",
+        "comment": "Lớp ngoan",
+        "week": "02",
+        "absentStudents": [
+            "teststudent001@gmail.com",
+            "teststudent011@gmail.com",
+            "teststudent111@gmail.com"
+        ]
+    },
+    {
         "class": "11B1",
         "teacherEmail": "hungnh219@gmail.com",
         "subjectId": "001",
