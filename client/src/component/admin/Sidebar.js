@@ -27,6 +27,10 @@ const Sidebar = () => {
                 style={page==="user"?{backgroundColor:"rgb(209 213 219)"}:{}}>            
                     <Link to="/admin/user" className="block w-[100%]"> <img alt="icon" src="/icon/notebook.png" width="20px" className="inline-block mr-[8px]"></img>Tài khoản</Link>
                 </div>           
+                <div className=" px-4 py-[12px]  text-sm font-semibold hover:bg-gray-300 "
+                style={page==="notebook"?{backgroundColor:"rgb(209 213 219)"}:{}}>            
+                    <Link to="/admin/notebook" className="block w-[100%]"> <img alt="icon" src="/icon/notebook.png" width="20px" className="inline-block mr-[8px]"></img>Sổ đầu bài</Link>
+                </div>  
             </nav>
             <div className="flex items-center justify-center h-16 border-t border-gray-700">
                 <button className="px-4 py-[12px] text-white font-semibold bg-red-500 rounded-lg hover:bg-red-600 focus:outline-none focus:bg-red-600"

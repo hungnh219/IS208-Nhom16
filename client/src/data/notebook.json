@@ -1,14 +1,290 @@
 [
     {
-        "class": "10C1",
-        "teacherEmail": "hungnh219@gmail.com",
-        "subjectId": "001",
-        "content": "Số phức",
-        "comment": "Lớp ngoan",
-        "week": "01",
-        "absentStudents": [
-            "hongnguyen@gmail.com",
-            "teststudent1@gmail.com"
-        ]
+        "class": "10A1",
+        "week": 1,
+        "day": {
+            "Thứ 2": [
+                {
+                    "teacher": "Nguyễn Văn H",
+                    "lesson": "1",
+                    "subject": "Toán",
+                    "content": "Số phức",
+                    "comment": "Lớp ngoan",
+                    "evaluate": "Tốt",
+                    "absentStudents": ["hongnguyen", "teststudent1"]
+                },
+                {
+                    "teacher": "Trần Thị M",
+                    "lesson": "2",
+                    "subject": "Văn",
+                    "content": "Phân tích thơ",
+                    "comment": "Học sinh chăm chỉ",
+                    "evaluate": "Khá",
+                    "absentStudents": ["tranthi", "phamanh"]
+                },
+                {
+                    "teacher": "Lê Quang T",
+                    "lesson": "3",
+                    "subject": "Lý",
+                    "content": "Điện trở",
+                    "comment": "Lớp cần chú ý hơn",
+                    "evaluate": "Trung bình",
+                    "absentStudents": []
+                },
+                {
+                    "teacher": "Phạm Thị K",
+                    "lesson": "4",
+                    "subject": "Hóa",
+                    "content": "Cân bằng phương trình",
+                    "comment": "Học sinh tích cực",
+                    "evaluate": "Tốt",
+                    "absentStudents": ["nguyenduc"]
+                },
+                {
+                    "teacher": "Nguyễn Văn D",
+                    "lesson": "5",
+                    "subject": "Anh",
+                    "content": "Thì hiện tại đơn",
+                    "comment": "Lớp sôi nổi",
+                    "evaluate": "Xuất sắc",
+                    "absentStudents": ["phamminh"]
+                }
+            ],
+            "Thứ 3": [
+                {
+                    "teacher": "Nguyễn Thị B",
+                    "lesson": "1",
+                    "subject": "Sử",
+                    "content": "Cách mạng tháng 8",
+                    "comment": "Lớp chú ý lắng nghe",
+                    "evaluate": "Tốt",
+                    "absentStudents": []
+                },
+                {
+                    "teacher": "Trần Văn H",
+                    "lesson": "2",
+                    "subject": "Địa",
+                    "content": "Địa lý Việt Nam",
+                    "comment": "Lớp cần cải thiện",
+                    "evaluate": "Trung bình",
+                    "absentStudents": ["teststudent2"]
+                },
+                {
+                    "teacher": "Lê Thị N",
+                    "lesson": "3",
+                    "subject": "Sinh",
+                    "content": "Di truyền học",
+                    "comment": "Lớp tập trung",
+                    "evaluate": "Khá",
+                    "absentStudents": ["hoanganh"]
+                },
+                {
+                    "teacher": "Nguyễn Văn T",
+                    "lesson": "4",
+                    "subject": "Toán",
+                    "content": "Đạo hàm",
+                    "comment": "Lớp tích cực",
+                    "evaluate": "Tốt",
+                    "absentStudents": []
+                },
+                {
+                    "teacher": "Trần Thị Q",
+                    "lesson": "5",
+                    "subject": "Tin",
+                    "content": "Lập trình Python",
+                    "comment": "Học sinh hăng hái",
+                    "evaluate": "Xuất sắc",
+                    "absentStudents": ["phanthanh"]
+                }
+            ],
+            "Thứ 4": [
+                {
+                    "teacher": "Lê Văn B",
+                    "lesson": "1",
+                    "subject": "Công nghệ",
+                    "content": "Đồ họa máy tính",
+                    "comment": "Lớp cần chú ý",
+                    "evaluate": "Trung bình",
+                    "absentStudents": ["ngocmai"]
+                },
+                {
+                    "teacher": "Nguyễn Thị L",
+                    "lesson": "2",
+                    "subject": "GDCD",
+                    "content": "Quyền con người",
+                    "comment": "Lớp nghiêm túc",
+                    "evaluate": "Khá",
+                    "absentStudents": []
+                },
+                {
+                    "teacher": "Phạm Văn T",
+                    "lesson": "3",
+                    "subject": "Lý",
+                    "content": "Cảm ứng điện từ",
+                    "comment": "Lớp tích cực",
+                    "evaluate": "Tốt",
+                    "absentStudents": ["duchieu"]
+                },
+                {
+                    "teacher": "Trần Thị P",
+                    "lesson": "4",
+                    "subject": "Hóa",
+                    "content": "Hóa hữu cơ",
+                    "comment": "Học sinh tập trung",
+                    "evaluate": "Xuất sắc",
+                    "absentStudents": ["nguyenthien"]
+                },
+                {
+                    "teacher": "Lê Quang K",
+                    "lesson": "5",
+                    "subject": "Anh",
+                    "content": "Ngữ pháp nâng cao",
+                    "comment": "Lớp chú ý lắng nghe",
+                    "evaluate": "Tốt",
+                    "absentStudents": []
+                }
+            ],
+            "Thứ 5": [
+                {
+                    "teacher": "Nguyễn Văn A",
+                    "lesson": "1",
+                    "subject": "Toán",
+                    "content": "Tích phân",
+                    "comment": "Lớp tích cực",
+                    "evaluate": "Xuất sắc",
+                    "absentStudents": ["minhtri"]
+                },
+                {
+                    "teacher": "Trần Thị B",
+                    "lesson": "2",
+                    "subject": "Văn",
+                    "content": "Văn học Việt Nam",
+                    "comment": "Lớp cần cải thiện",
+                    "evaluate": "Trung bình",
+                    "absentStudents": []
+                },
+                {
+                    "teacher": "Lê Thị H",
+                    "lesson": "3",
+                    "subject": "Sử",
+                    "content": "Chiến tranh thế giới",
+                    "comment": "Học sinh chăm chỉ",
+                    "evaluate": "Khá",
+                    "absentStudents": ["hoanglong"]
+                },
+                {
+                    "teacher": "Nguyễn Văn C",
+                    "lesson": "4",
+                    "subject": "Địa",
+                    "content": "Địa lý kinh tế",
+                    "comment": "Lớp chú ý lắng nghe",
+                    "evaluate": "Tốt",
+                    "absentStudents": []
+                },
+                {
+                    "teacher": "Trần Văn L",
+                    "lesson": "5",
+                    "subject": "Sinh",
+                    "content": "Hệ sinh thái",
+                    "comment": "Học sinh hăng hái",
+                    "evaluate": "Xuất sắc",
+                    "absentStudents": ["hienle"]
+                }
+            ],
+            "Thứ 6": [
+                {
+                    "teacher": "Phạm Thị A",
+                    "lesson": "1",
+                    "subject": "Toán",
+                    "content": "Giải tích",
+                    "comment": "Lớp tích cực",
+                    "evaluate": "Tốt",
+                    "absentStudents": ["trucnguyen"]
+                },
+                {
+                    "teacher": "Nguyễn Văn E",
+                    "lesson": "2",
+                    "subject": "Lý",
+                    "content": "Quang học",
+                    "comment": "Lớp cần chú ý",
+                    "evaluate": "Trung bình",
+                    "absentStudents": ["nguyendai"]
+                },
+                {
+                    "teacher": "Lê Thị P",
+                    "lesson": "3",
+                    "subject": "Hóa",
+                    "content": "Hóa phân tích",
+                    "comment": "Học sinh chăm chỉ",
+                    "evaluate": "Khá",
+                    "absentStudents": []
+                },
+                {
+                    "teacher": "Nguyễn Thị D",
+                    "lesson": "4",
+                    "subject": "Văn",
+                    "content": "Văn học nước ngoài",
+                    "comment": "Lớp tích cực",
+                    "evaluate": "Tốt",
+                    "absentStudents": ["phuonganh"]
+                },
+                {
+                    "teacher": "Trần Văn H",
+                    "lesson": "5",
+                    "subject": "Anh",
+                    "content": "Kỹ năng nghe",
+                    "comment": "Học sinh tích cực",
+                    "evaluate": "Xuất sắc",
+                    "absentStudents": []
+                }
+            ],
+            "Thứ 7": [
+                {
+                    "teacher": "Nguyễn Văn G",
+                    "lesson": "1",
+                    "subject": "Toán",
+                    "content": "Hình học",
+                    "comment": "Lớp cần cải thiện",
+                    "evaluate": "Trung bình",
+                    "absentStudents": ["minhhoang"]
+                },
+                {
+                    "teacher": "Trần Thị T",
+                    "lesson": "2",
+                    "subject": "Tin",
+                    "content": "Thiết kế web",
+                    "comment": "Lớp chú ý lắng nghe",
+                    "evaluate": "Tốt",
+                    "absentStudents": []
+                },
+                {
+                    "teacher": "Lê Văn H",
+                    "lesson": "3",
+                    "subject": "Công nghệ",
+                    "content": "Lập trình C++",
+                    "comment": "Học sinh hăng hái",
+                    "evaluate": "Xuất sắc",
+                    "absentStudents": ["nguyenthien"]
+                },
+                {
+                    "teacher": "Nguyễn Thị K",
+                    "lesson": "4",
+                    "subject": "GDCD",
+                    "content": "Luật pháp",
+                    "comment": "Lớp tích cực",
+                    "evaluate": "Khá",
+                    "absentStudents": ["lethanh"]
+                },
+                {
+                    "teacher": "Phạm Văn P",
+                    "lesson": "5",
+                    "subject": "Sinh",
+                    "content": "Tiến hóa",
+                    "comment": "Học sinh chăm chỉ",
+                    "evaluate": "Tốt",
+                    "absentStudents": []
+                }
+            ]
+        }
     }
 ]

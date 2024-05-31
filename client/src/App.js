@@ -10,6 +10,7 @@ import ForgotPassword from './component/user/ForgotPassword';
 import ResetPassword from './component/user/ResetPassword';
 import Notification from "./component/admin/Notification"
 import Scheduled from "./component/admin/Scheduled"
+import NotebookAdmin from "./component/admin/NotebookAdmin"
 import User from "./component/admin/User"
 import { ToastContainer} from 'react-toastify';
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/admin/notification" element={<Notification/>}></Route>
         <Route path="/admin/scheduled" element={<Scheduled/>}></Route>
         <Route path="/admin/user" element={<User/>}></Route>
+        <Route path="/admin/notebook" element={<NotebookAdmin/>}></Route>
       </Routes>
       <ToastContainer />
     </div>
