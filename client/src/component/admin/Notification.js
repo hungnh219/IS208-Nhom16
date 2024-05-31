@@ -46,12 +46,12 @@ const post = [
       "Nội dung thông báo 1 Nội dung thông báo 1Nội dung thông báo 1 Nội dung thông báo 1Nội dung thông báo 1 Nội dung thông báo 1 Nội dung thông báo 1Nội dung thông báo 1",
   },
   {
-    id: 1,
+    id: 2,
     title: "Thông báo 2",
     content: "Nội dung thông báo 2",
   },
   {
-    id: 1,
+    id: 3,
     title: "Thông báo 3",
     content: "Nội dung thông báo 3",
   },
@@ -60,8 +60,10 @@ const post = [
 const Notification = () => {
   const [modalUpdateIsOpen, setModalUpdateIsOpen] = useState(false);
   const [modalDeleteIsOpen, setModalDeleteIsOpen] = useState(false);
+  const [modalCreateIsOpen, setModalCreateIsOpen] = useState(false);
   const [text, setText] = useState("");
   const [title, setTitle] = useState("");
+  const [newPost,setNewPost]=useState("")
   const handleChange = (value) => {
     setText(value);
   };
@@ -73,7 +75,7 @@ const Notification = () => {
           <table className="text-center table-notification border-collapse">
             <thead>
               <tr>
-                <th>STT</th>
+                <th>Id</th>
                 <th>Tiêu đề</th>
                 <th className="w-[300px]">Nội dung</th>
                 <th>Hành động</th>
@@ -114,6 +116,12 @@ const Notification = () => {
             </tbody>
           </table>
         </div>
+        <div className="flex justify-end px-[32px] mt-[24px]">
+          <button className="px-[16px] py-[4px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]" 
+          onClick={()=>{setModalCreateIsOpen(true)}}>
+            Thêm thông báo
+          </button>
+          </div>
       </div>
       <Modal
         isOpen={modalUpdateIsOpen}
@@ -152,7 +160,7 @@ const Notification = () => {
           </div>
           <div className="flex justify-end mt-[32px]">
             <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
-            onClick={()=>{setModalUpdateIsOpen(formGroupClasses)}}>Lưu</button>
+            onClick={()=>{setModalUpdateIsOpen(false)}}>Lưu</button>
             </div> 
         </div>
 
@@ -199,6 +207,54 @@ const Notification = () => {
 
         <button
           onClick={() => setModalDeleteIsOpen(false)}
+          className="absolute top-[15px] right-[20px] hover:text-[blue]"
+        >
+          Đóng
+        </button>
+      </Modal>
+      <Modal
+        isOpen={modalCreateIsOpen}
+        onRequestClose={() => setModalCreateIsOpen(false)}
+        contentLabel="Example Modal"
+        style={{
+          content: {
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            marginRight: "-50%",
+            transform: "translate(-50%, -50%)",
+            boxShadow: "0px 0px 10px #e2e2e2",
+            border: "none",
+            width: "850px",
+            height: "500px",
+            position: "relative",
+          },
+        }}
+      >
+        <div className="p-[16px] ">
+          <div className="py-[4px]">
+            <div className="font-bold">Tiêu đề: </div>
+            <input className="border-[1px] border-black" ></input>
+          </div>
+
+          <div className="py-[4px] overflow-scroll h-[300px]">
+            <label className="font-bold">Nội dung thông báo</label>
+            <ReactQuill
+              value={newPost}
+              onChange={(e)=>{setNewPost(e.target.value)}}
+              modules={modules}
+              formats={formats}
+            />
+          </div>
+          <div className="flex justify-end mt-[32px]">
+            <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
+            onClick={()=>{setModalUpdateIsOpen(formGroupClasses)}}>Lưu</button>
+            </div> 
+        </div>
+
+        <button
+          onClick={() => setModalUpdateIsOpen(false)}
           className="absolute top-[15px] right-[20px] hover:text-[blue]"
         >
           Đóng

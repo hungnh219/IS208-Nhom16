@@ -151,6 +151,8 @@ const Notebook = () => {
                             setModalShowIsOpen(true)
                             setSubject(item.subject)
                             setTeacher(item.teacher)
+                            setDays(item.day);
+                            setLesson(item.lesson);
                           }}
                         >
                           Xem
