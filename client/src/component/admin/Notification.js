@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 import ReactQuill from "react-quill";
 import Modal from "react-modal";
 import "react-quill/dist/quill.snow.css";
-import { formGroupClasses } from "@mui/material";
 Modal.setAppElement("#root");
 const modules = {
   toolbar: [
@@ -41,20 +39,14 @@ const formats = [
 const post = [
   {
     id: 1,
-    title: "Thông báo 1",
-    content:
-      "Nội dung thông báo 1 Nội dung thông báo 1Nội dung thông báo 1 Nội dung thông báo 1Nội dung thông báo 1 Nội dung thông báo 1 Nội dung thông báo 1Nội dung thông báo 1",
+    title:"Giới thiệu kỳ thi đánh giá Năng lực tiếng Anh theo Khung năng lực Ngoại ngữ 6 bậc dùng cho Việt Nam (VSTEP)",
+    content:"Phòng ĐTĐH gửi đến các bạn thông báo của Trường Đại học Khoa học Xã hội và Nhân văn về việc Giới thiệu kỳ thi đánh giá Năng lực tiếng Anh theo Khung năng lực Ngoại ngữ 6 bậc dùng cho Việt Nam (VSTEP). Thông tin chi tiết theo file đính kèm.",
   },
   {
     id: 2,
-    title: "Thông báo 2",
-    content: "Nội dung thông báo 2",
-  },
-  {
-    id: 3,
-    title: "Thông báo 3",
-    content: "Nội dung thông báo 3",
-  },
+    title:"Thông báo về việc ngừng sử dụng kết quả bài thi ngoại ngữ quốc tế IELST Indicator và TOEFL iBT Home Edition",
+    content:"Phòng ĐTĐH thông báo về việc ngừng sử dụng kết quả bài thi ngoại ngữ quốc tế IELST Indicator và TOEFL iBT Home Edition để xét đạt chuẩn quá trình và xét công nhận chuẩn đầu ra tốt nghiệp trình độ đại học kể từ ngày 13/12/2022."},
+
   // Add more classes as needed
 ];
 const Notification = () => {
@@ -63,10 +55,17 @@ const Notification = () => {
   const [modalCreateIsOpen, setModalCreateIsOpen] = useState(false);
   const [text, setText] = useState("");
   const [title, setTitle] = useState("");
+  const [id,setId]=useState("");
+  const [posts,setPosts]=useState(post)
   const [newPost,setNewPost]=useState({title:"",content:""})
   const handleChange = (value) => {
     setText(value);
+    const p=[...posts]
+    p[index].content=value
+    setPosts(p)
   };
+  let index
+  posts.forEach((post,idx)=>{if(post.id===id)index=idx})
   return (
     <div className="flex bg-[#e6e6ee] w-[100%] min-h-[100vh] ">
       <Sidebar />
@@ -76,19 +75,19 @@ const Notification = () => {
             <thead>
               <tr>
                 <th>Id</th>
-                <th>Tiêu đề</th>
+                <th className="w-[500px]">Tiêu đề</th>
                 <th className="w-[300px]">Nội dung</th>
                 <th>Hành động</th>
               </tr>
             </thead>
             <tbody>
-              {post.map((row, index) => (
+              {posts.map((row, index) => (
                 <tr key={index}>
                   <td>{row.id}</td>
-                  <td>{row.title}</td>
+                  <td>{posts[index]?.title}</td>
                   <td className="multiline-ellipsis">
                     <div className="overflow-hidden h-[50px]">
-                      {row.content}
+                      {posts[index]?.content}
                     </div>
                   </td>
                   <td>
@@ -97,7 +96,9 @@ const Notification = () => {
                       onClick={() => {
                         setModalUpdateIsOpen(true);
                         setTitle(row.title);
+                        console.log(row.title)
                         setText(row.content);
+                        setId(row.id)
                       }}
                     >
                       Sửa
@@ -106,6 +107,7 @@ const Notification = () => {
                       className="px-[16px] py-[4px] hover:opacity-[0.8] bg-[red] text-[white] shadow-xl "
                       onClick={() => {
                         setModalDeleteIsOpen(true);
+                        setId(row.id)
                       }}
                     >
                       Xóa
@@ -118,7 +120,11 @@ const Notification = () => {
         </div>
         <div className="flex justify-end px-[32px] mt-[24px]">
           <button className="px-[16px] py-[4px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]" 
-          onClick={()=>{setModalCreateIsOpen(true)}}>
+          onClick={()=>{
+            setModalCreateIsOpen(true)
+          }
+          
+            }>
             Thêm thông báo
           </button>
           </div>
@@ -146,7 +152,13 @@ const Notification = () => {
         <div className="p-[16px] ">
           <div className="py-[4px]">
             <div className="font-bold">Tiêu đề: </div>
-            <input className="border-[1px] border-black" value={title}></input>
+            <input className="border-[1px] border-black w-full"
+            value={title} 
+            onChange={(e)=>{setTitle(e.target.value)
+              const p=[...posts]
+              p[index].title=e.target.value
+              setPosts(p)
+            }}></input>
           </div>
 
           <div className="py-[4px] overflow-scroll h-[300px]">
@@ -160,7 +172,9 @@ const Notification = () => {
           </div>
           <div className="flex justify-end mt-[32px]">
             <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
-            onClick={()=>{setModalUpdateIsOpen(false)}}>Lưu</button>
+            onClick={()=>{
+              setModalUpdateIsOpen(false)
+              }}>Lưu</button>
             </div> 
         </div>
 
@@ -199,7 +213,13 @@ const Notification = () => {
 
           <div className="flex justify-center mt-[32px]">
             <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[red] text-[white] shadow-xl mr-[8px]"
-             onClick={()=>{setModalDeleteIsOpen(false)}}>Xóa</button>
+             onClick={()=>{
+              setModalDeleteIsOpen(false)
+              const p=[...posts]
+              p.splice(index, 1);
+              setPosts(p)
+            }}
+             >Xóa</button>
             <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
             onClick={()=>{setModalDeleteIsOpen(false)}}>Hủy bỏ</button>
             </div> 
@@ -250,7 +270,11 @@ const Notification = () => {
           </div>
           <div className="flex justify-end mt-[32px]">
             <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
-            onClick={()=>{setModalCreateIsOpen(false)}}>Lưu</button>
+            onClick={()=>{setModalCreateIsOpen(false)
+              const p=[...posts]
+              p.push({id:posts.length+1,title:newPost.title,content:newPost.content})
+              setPosts(p)
+            }}>Lưu</button>
             </div> 
         </div>
 
