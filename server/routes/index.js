@@ -6,7 +6,7 @@ const classRouter = require('./class')
 const lessonRouter = require('./lesson')
 const studentRouter = require('./student')
 const notebookRouter = require('./notebook')
-const notifictionRouter = require('./notification')
+const notificationRouter = require('./notification')
 const initRoutes = (app) => {
     app.use('/api/user', userRouter),
     app.use('/api/teacher', teacherRouter),
@@ -16,7 +16,7 @@ const initRoutes = (app) => {
     app.use('/api/lesson', lessonRouter),
     app.use('/api/student', studentRouter),
     app.use('/api/notebook', notebookRouter)
-    app.use('/api/notebook', notifictionRouter)
+    app.use('/api/notebook', notificationRouter)
 }
 
 module.exports = initRoutes

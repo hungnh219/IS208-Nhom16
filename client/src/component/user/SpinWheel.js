@@ -9,7 +9,6 @@ const getRandomColor = () => {
 };
 
 const MySpinWheel = () => {
-  const [classes, setClasses] = useState("");
   const groupBy = (array, keyGetter) => {
     return array.reduce((result, item) => {
       // Lấy giá trị của key dựa trên hàm keyGetter
@@ -24,7 +23,10 @@ const MySpinWheel = () => {
     }, {});
   };
   const groupClass = groupBy(dataStudent, (item) => item.class);
-
+  let classes="";
+  if (localStorage.getItem("class")) {
+    classes=( JSON.parse(localStorage.getItem("class")));
+  }
   let data;
   if (localStorage.getItem("wheel")) {
     data = JSON.parse(localStorage.getItem("wheel"));
@@ -81,7 +83,7 @@ const MySpinWheel = () => {
           <select
             className="border-black border-[1px] ml-[8px]"
             onChange={(e) => {
-              setClasses(e.target.value);
+              localStorage.setItem("class", JSON.stringify(e.target.value));
               const segmentTextClass=groupClass[e.target.value].map((seg) => {
                 return seg.firstName +" "+seg.lastName + "\n";
               }).join("");;

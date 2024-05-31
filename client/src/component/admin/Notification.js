@@ -63,7 +63,7 @@ const Notification = () => {
   const [modalCreateIsOpen, setModalCreateIsOpen] = useState(false);
   const [text, setText] = useState("");
   const [title, setTitle] = useState("");
-  const [newPost,setNewPost]=useState("")
+  const [newPost,setNewPost]=useState({title:"",content:""})
   const handleChange = (value) => {
     setText(value);
   };
@@ -235,26 +235,27 @@ const Notification = () => {
         <div className="p-[16px] ">
           <div className="py-[4px]">
             <div className="font-bold">Tiêu đề: </div>
-            <input className="border-[1px] border-black" ></input>
+            <input className="border-[1px] border-black" 
+            onChange={(e)=>{setNewPost({...newPost, title: e.target.value})}}
+            ></input>
           </div>
 
           <div className="py-[4px] overflow-scroll h-[300px]">
             <label className="font-bold">Nội dung thông báo</label>
             <ReactQuill
-              value={newPost}
-              onChange={(e)=>{setNewPost(e.target.value)}}
+              onChange={(value)=>{setNewPost({...newPost, content: value})}}
               modules={modules}
               formats={formats}
             />
           </div>
           <div className="flex justify-end mt-[32px]">
             <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
-            onClick={()=>{setModalUpdateIsOpen(formGroupClasses)}}>Lưu</button>
+            onClick={()=>{setModalCreateIsOpen(false)}}>Lưu</button>
             </div> 
         </div>
 
         <button
-          onClick={() => setModalUpdateIsOpen(false)}
+          onClick={() => setModalCreateIsOpen(false)}
           className="absolute top-[15px] right-[20px] hover:text-[blue]"
         >
           Đóng
