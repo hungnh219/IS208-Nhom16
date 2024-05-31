@@ -28,7 +28,9 @@ const Notebook=()=>{
         subject: "Toán",
         classNumber: "42/45",
         teacher: "Nguyễn Văn A",
-        evaluate:"Tốt"
+        evaluate:"Tốt",
+        content:"Đại số",
+        comment:"Năng nổ"
       },
       {
         day: 2,
@@ -36,7 +38,9 @@ const Notebook=()=>{
         subject: "Toán",
         classNumber: "42/45",
         teacher: "Nguyễn Văn A",
-        evaluate:"Khá"
+        evaluate:"Khá",
+        content:"Thống kê",
+        comment:"Học tốt"
       },
       {
         day: 3,
@@ -44,7 +48,9 @@ const Notebook=()=>{
         subject: "Lí",
         classNumber: "42/45",
         teacher: "Nguyễn Văn B",
-        evaluate:"Tốt"
+        evaluate:"Tốt",
+        content:"Vợ chồng a phủ",
+        comment:"Tốt"
       },
    
        
@@ -61,19 +67,20 @@ const Notebook=()=>{
     ]  
     const groupDays = groupBy(scheduleData, item => item.day);
     const [classes,setClasses]=useState(2)
+    const [days,setDays]=useState(2)
     const [week,setWeek]=useState(1)
-    const [semester, setSemester] =useState(1);
-    const [year,setYear]=useState("2023-2024")
     const [attend,setAttend]=useState(listStudents)
+    const [comment,setComment]=useState("")
+    const [lesson,setLesson]=useState(1)
+    const [content,setContent]=useState("")
+    const [notebook,setNotebook]=useState(groupDays)
+    let indexComment;
+    let indexContent;
+    notebook[days].forEach((item,idx)=>{if(item.lesson==lesson)indexComment=idx})
+    notebook[days].forEach((item,idx)=>{if(item.lesson==lesson)indexContent=idx})
     const attendStudentCount=attend.filter((student) =>{
       return student.attend;
     }).length;
-    const handleChangeSemester = (e) => {
-      setSemester(e.target.value);
-    };
-    const handleChangeYear = (e) => {
-        setYear(e.target.value);
-      };
       const handleChangeClass = (e) => {
         setClasses(e.target.value);
       };
@@ -141,7 +148,14 @@ const Notebook=()=>{
                     <button className="px-[16px] py-[4px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
                     onClick={() => setModalShowIsOpen(true)}>Xem</button>
                     <button className="px-[16px] py-[4px] hover:opacity-[0.8] bg-[red] text-[white] shadow-xl "
-                    onClick={() => setModalUpdateIsOpen(true)}>Sửa</button>
+                    onClick={() => {
+                    setModalUpdateIsOpen(true)
+                    setComment(item.comment)
+                    setContent(item.content)
+                    setDays(item.day)
+                    setLesson(item.lesson)
+                  }
+                    }>Sửa</button>
                 </td>
               
               </tr>
@@ -232,15 +246,30 @@ const Notebook=()=>{
             </div>
             <div className="py-[4px]">
               <label className="font-bold">Nội dung bài học</label>
-              <textarea className="w-[100%] h-[100px] px-[8px] py-[8px] mt-[8px] rounded bg-[#ececec]">Đại số tích phân</textarea>
+              <textarea className="w-[100%] h-[100px] px-[8px] py-[8px] mt-[8px] rounded bg-[#ececec]"
+              onChange={(e)=>{setNotebook((prev)=>{
+                let index=0;
+                const note={...prev};
+                note[days].forEach((item,idx)=>{if(item.lesson==lesson)index=idx})
+                note[days][index].content=e.target.value;
+                return note;
+              })}}>{notebook[days][indexContent]?.content}</textarea>
             </div>
             <div className="py-[4px]">
               <label className="font-bold">Nhận xét</label>
-              <textarea className="w-[100%] h-[100px] px-[8px] py-[8px] mt-[8px] rounded bg-[#ececec]">Lớp học tốt</textarea>
+              <textarea className="w-[100%] h-[100px] px-[8px] py-[8px] mt-[8px] rounded bg-[#ececec]"
+              onChange={(e)=>{setNotebook((prev)=>{
+                let index=0;
+                const note={...prev};
+                note[days].forEach((item,idx)=>{if(item.lesson==lesson)index=idx})
+                note[days][index].comment=e.target.value;
+                return note;
+              })}}>{notebook[days][indexComment]?.comment}</textarea>
     
             </div>
             <div className="flex justify-end mt-[32px]">
-            <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]">Lưu</button>
+            <button className="px-[16px] py-[4px] ml-[16px] hover:opacity-[0.8] bg-[#247afb] text-[white] shadow-xl mr-[8px]"
+            onClick={()=>{setModalUpdateIsOpen(false)}}>Lưu</button>
             </div> 
         </div>
   
